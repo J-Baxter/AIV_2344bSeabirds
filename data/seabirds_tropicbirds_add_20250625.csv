@@ -1,0 +1,351 @@
+order,family,Family_common,Subfamily,Tribe,Common.name,Scientific.name,Movement,X2024.IUCN.Red.List.category,if_fao,if_new_infect,if_birdlife_breeding,if_birdlife_nonbreeding,X1,X2,X3,X4,X5,X6.1,X7,X8,X9,X10,X11,X12.,if_movebank,if_birdlife_std,low_season,Flyways,Current.population.trend
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,King Penguin,Aptenodytes patagonicus,Pelagic,LC,1,n,TRUE,TRUE,1,1,1,2,0,0,0,0,2,1,1,1,1,1,0,,NA
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,Emperor Penguin,Aptenodytes forsteri,Pelagic,NT,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,0,0,2,1,1,1,0,0,,NA
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,Gentoo Penguin,Pygoscelis papua,Pelagic,LC,1,n,TRUE,TRUE,0,0,0,0,0,2,1,1,1,1,1,2,0,1,0,,NA
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,Adelie Penguin,Pygoscelis adeliae,Pelagic,LC,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,0,2,1,1,1,1,1,0,,NA
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,Chinstrap Penguin,Pygoscelis antarcticus,Pelagic,LC,1,o,TRUE,TRUE,2,0,0,2,1,1,2,0,0,0,2,1,0,1,0,,NA
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,Royal Penguin,Eudyptes schlegeli,Pelagic,LC,0,NA,TRUE,TRUE,1,2,0,0,0,0,0,0,2,1,1,1,0,0,0,,NA
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,Macaroni Penguin,Eudyptes chrysolophus,Pelagic,VU,0,NA,TRUE,TRUE,1,2,2,0,0,0,0,0,2,2,2,1,0,1,0,,NA
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,Northern Rockhopper Penguin,Eudyptes moseleyi,Pelagic,EN,0,NA,TRUE,TRUE,1,1,1,1,2,0,0,0,2,1,1,1,0,1,0,,NA
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,Southern Rockhopper Penguin,Eudyptes chrysocome,Pelagic,VU,1,n,TRUE,TRUE,0,0,0,0,0,0,0,0,0,2,1,2,0,1,0,,NA
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,Erect-crested Penguin,Eudyptes sclateri,Pelagic,EN,0,NA,TRUE,TRUE,1,1,1,2,0,0,0,0,2,1,1,1,0,1,0,,NA
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,Fiordland Penguin,Eudyptes pachyrhynchus,Pelagic,NT,0,NA,TRUE,TRUE,0,0,2,1,1,1,1,1,2,0,0,0,0,1,0,,NA
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,Snares Penguin,Eudyptes robustus,Pelagic,VU,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,0,0,2,1,1,1,1,0,,NA
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,Yellow-eyed Penguin,Megadyptes antipodes,Pelagic,EN,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,2,1,1,1,1,0,0,0,,NA
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,Little Penguin,Eudyptula minor,Pelagic,LC,0,NA,TRUE,TRUE,1,2,0,0,0,0,0,2,1,1,1,1,0,1,0,,NA
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,African Penguin,Spheniscus demersus,Pelagic,CR,1,o,TRUE,TRUE,1,1,2,0,0,0,0,0,0,2,1,1,0,1,0,,NA
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,Magellanic Penguin,Spheniscus magellanicus,Pelagic,LC,1,n,TRUE,TRUE,2,0,0,2,1,1,1,1,1,1,1,1,0,1,0,,NA
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,Humboldt Penguin,Spheniscus humboldti,Pelagic,VU,1,n,TRUE,TRUE,1,1,1,1,2,0,0,0,2,1,1,1,0,1,0,,NA
+SPHENISCIFORMES,Spheniscidae,Penguins,NA,NA,Galapagos Penguin,Spheniscus mendiculus,Pelagic,EN,0,NA,TRUE,TRUE,2,1,1,1,1,1,1,1,1,1,2,0,0,0,0,,NA
+PROCELLARIIFORMES,Oceanitidae,Southern Storm-petrels,NA,NA,Wilson's Storm-petrel,Oceanites oceanicus,Pelagic,LC,0,NA,TRUE,TRUE,1,1,1,1,2,0,0,0,0,0,0,2,0,1,0,"Atlantic Flyway,Central and Eastern Pacific Flyway,East Indian Ocean Flyway,North Indian Ocean Flyway,Western Pacific Flyway",Stable
+PROCELLARIIFORMES,Oceanitidae,Southern Storm-petrels,NA,NA,White-vented Storm-petrel,Oceanites gracilis,Pelagic,DD,0,NA,TRUE,TRUE,2,0,0,2,2,2,2,2,2,2,2,2,0,0,0,Central and Eastern Pacific Flyway,Unknown
+PROCELLARIIFORMES,Oceanitidae,Southern Storm-petrels,NA,NA,Pincoya Storm-petrel,Oceanites pincoyae,Pelagic,DD,0,NA,TRUE,TRUE,1,2,0,0,0,0,0,0,0,2,1,1,0,0,0,,NA
+PROCELLARIIFORMES,Oceanitidae,Southern Storm-petrels,NA,NA,Grey-backed Storm-petrel,Garrodia nereis,Pelagic,LC,0,NA,TRUE,TRUE,1,1,1,2,0,0,0,2,1,1,1,1,0,0,0,Southern Ocean Flyway,Decreasing
+PROCELLARIIFORMES,Oceanitidae,Southern Storm-petrels,NA,NA,White-faced Storm-petrel,Pelagodroma marina,Pelagic,LC,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,1,1,"Atlantic Flyway,Central and Eastern Pacific Flyway,East Indian Ocean Flyway,North Indian Ocean Flyway,Western Pacific Flyway",Decreasing
+PROCELLARIIFORMES,Oceanitidae,Southern Storm-petrels,NA,NA,White-bellied Storm-petrel,Fregetta grallaria,Pelagic,LC,0,NA,TRUE,TRUE,1,1,1,1,2,0,0,0,0,0,0,2,0,0,0,"Atlantic Flyway,Central and Eastern Pacific Flyway",Decreasing
+PROCELLARIIFORMES,Oceanitidae,Southern Storm-petrels,NA,NA,Black-bellied Storm-petrel,Fregetta tropica,Pelagic,LC,0,NA,TRUE,TRUE,1,1,1,1,1,2,2,0,2,1,1,1,0,0,0,"Atlantic Flyway,Central and Eastern Pacific Flyway,East Indian Ocean Flyway,North Indian Ocean Flyway,Western Pacific Flyway",Decreasing
+PROCELLARIIFORMES,Oceanitidae,Southern Storm-petrels,NA,NA,New Zealand Storm-petrel,Fregetta maoriana,Pelagic,CR,0,NA,TRUE,TRUE,2,1,1,1,1,1,2,0,0,0,0,0,0,0,0,,NA
+PROCELLARIIFORMES,Oceanitidae,Southern Storm-petrels,NA,NA,New Caledonian Storm-petrel,Fregetta lineata,Pelagic,DD,0,NA,TRUE,TRUE,DD,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,0,0,,NA
+PROCELLARIIFORMES,Oceanitidae,Southern Storm-petrels,NA,NA,Polynesian Storm-petrel,Nesofregetta fuliginosa,Pelagic,EN,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,Central and Eastern Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,European Storm-petrel,Hydrobates pelagicus,Pelagic,LC,0,NA,TRUE,TRUE,0,0,2,2,1,1,1,1,1,1,2,0,1,1,0,Atlantic Flyway,Unknown
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,Cape Verde Storm-petrel,Hydrobates jabejabe,Pelagic,LC,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,Atlantic Flyway,Decreasing
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,Band-rumped Storm-petrel,Hydrobates castro,Pelagic,LC,0,NA,TRUE,TRUE,DD,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,0,0,"Atlantic Flyway,Central and Eastern Pacific Flyway",Decreasing
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,Monteiro's Storm-petrel,Hydrobates monteiroi,Pelagic,VU,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,Matsudaira's Storm-petrel,Hydrobates matsudairae,Pelagic,VU,0,NA,TRUE,TRUE,2,1,1,1,1,2,0,0,0,0,0,0,0,0,0,"East Indian Ocean Flyway,Western Pacific Flyway",Unknown
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,Black Storm-petrel,Hydrobates melania,Pelagic,LC,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,Ashy Storm-petrel,Hydrobates homochroa,Pelagic,EN,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,Least Storm-petrel,Hydrobates microsoma,Pelagic,LC,0,NA,TRUE,TRUE,0,0,0,0,0,2,1,1,1,2,0,0,0,0,0,,NA
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,Wedge-rumped Storm-petrel,Hydrobates tethys,Pelagic,LC,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,0,0,2,0,0,0,Central and Eastern Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,Townsend's Storm-petrel,Hydrobates socorroensis,Pelagic,EN,0,NA,TRUE,TRUE,0,0,0,0,2,1,1,1,1,1,2,0,0,1,0,,NA
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,Ainley's Storm-petrel,Hydrobates cheimomnestes,Pelagic,VU,0,NA,TRUE,TRUE,1,2,2,2,0,0,0,0,0,2,1,1,0,1,0,Central and Eastern Pacific Flyway,Stable
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,Leach's Storm-petrel,Hydrobates leucorhous,Pelagic,VU,0,NA,TRUE,TRUE,0,0,0,2,2,2,1,1,1,2,2,0,0,0,0,"Atlantic Flyway,Central and Eastern Pacific Flyway",Decreasing
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,Swinhoe's Storm-petrel,Hydrobates monorhis,Pelagic,NT,0,NA,TRUE,TRUE,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,North Indian Ocean Flyway,Stable
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,Guadalupe Storm-petrel,Hydrobates macrodactylus,Pelagic,CR (PE),0,NA,FALSE,FALSE,0,2,1,1,1,1,1,2,0,0,0,0,0,0,0,Central and Eastern Pacific Flyway,Unknown
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,Tristram's Storm-petrel,Hydrobates tristrami,Pelagic,LC,0,NA,TRUE,TRUE,1,1,1,2,2,0,0,0,0,2,1,1,0,0,0,"Central and Eastern Pacific Flyway,Western Pacific Flyway",Stable
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,Markham's Storm-petrel,Hydrobates markhami,Pelagic,NT,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,Central and Eastern Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,Fork-tailed Storm-petrel,Hydrobates furcatus,Pelagic,LC,0,NA,TRUE,TRUE,0,2,2,2,1,1,1,1,1,2,0,0,0,0,0,Central and Eastern Pacific Flyway,Increasing
+PROCELLARIIFORMES,Hydrobatidae,Northern Storm-petrels,NA,NA,Ringed Storm-petrel,Hydrobates hornbyi,Pelagic,NT,0,NA,TRUE,TRUE,1,1,1,2,2,2,2,2,2,0,2,1,0,0,0,,NA
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Northern Royal Albatross,Diomedea sanfordi,Pelagic,EN,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,1,1,"Central and Eastern Pacific Flyway,Southern Ocean Flyway",Decreasing
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Southern Royal Albatross,Diomedea epomophora,Pelagic,VU,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,1,1,"Central and Eastern Pacific Flyway,Southern Ocean Flyway",Stable
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Snowy Albatross,Diomedea exulans,Pelagic,VU,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,Southern Ocean Flyway,Decreasing
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Antipodean Albatross,Diomedea antipodensis,Pelagic,EN,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,0,0,0,2,1,0,1,0,"Central and Eastern Pacific Flyway,Southern Ocean Flyway",Decreasing
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Amsterdam Albatross,Diomedea amsterdamensis,Pelagic,EN,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,Southern Ocean Flyway,Increasing
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Tristan Albatross,Diomedea dabbenena,Pelagic,CR,0,NA,TRUE,TRUE,2,2,2,0,0,0,0,0,0,0,2,2,0,1,0,"Atlantic Flyway,Southern Ocean Flyway",Decreasing
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Sooty Albatross,Phoebetria fusca,Pelagic,EN,0,NA,TRUE,TRUE,2,2,2,2,2,0,2,2,2,2,2,2,0,1,0,Southern Ocean Flyway,Decreasing
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Light-mantled Albatross,Phoebetria palpebrata,Pelagic,NT,0,NA,TRUE,TRUE,2,2,2,2,2,2,0,0,2,2,2,2,0,1,0,Southern Ocean Flyway,Decreasing
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Waved Albatross,Phoebastria irrorata,Pelagic,CR,1,n,TRUE,TRUE,0,0,0,2,1,1,1,1,1,1,1,2,1,1,0,Central and Eastern Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Black-footed Albatross,Phoebastria nigripes,Pelagic,NT,0,NA,TRUE,TRUE,1,1,1,1,1,1,2,0,0,2,1,1,0,1,0,Central and Eastern Pacific Flyway,Increasing
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Laysan Albatross,Phoebastria immutabilis,Pelagic,NT,0,NA,TRUE,TRUE,1,1,1,1,1,1,2,0,0,0,2,1,0,1,0,Central and Eastern Pacific Flyway,Stable
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Short-tailed Albatross,Phoebastria albatrus,Pelagic,VU,0,NA,TRUE,TRUE,1,1,1,1,1,2,0,0,0,0,0,2,0,1,0,Central and Eastern Pacific Flyway,Increasing
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Atlantic Yellow-nosed Albatross,Thalassarche chlororhynchos,Pelagic,EN,0,NA,TRUE,TRUE,1,1,1,2,0,0,0,2,1,1,1,1,0,1,0,Atlantic Flyway,Decreasing
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Indian Yellow-nosed Albatross,Thalassarche carteri,Pelagic,EN,0,NA,TRUE,TRUE,1,1,1,2,0,0,0,2,1,1,1,1,0,1,0,Southern Ocean Flyway,Decreasing
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Grey-headed Albatross,Thalassarche chrysostoma,Pelagic,EN,0,NA,TRUE,TRUE,1,1,1,1,2,0,0,0,2,1,1,1,1,1,0,Southern Ocean Flyway,Decreasing
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Black-browed Albatross,Thalassarche melanophris,Pelagic,LC,1,n,TRUE,TRUE,1,1,1,2,0,0,0,0,2,1,1,1,0,1,0,"Atlantic Flyway,Central and Eastern Pacific Flyway,Southern Ocean Flyway",Increasing
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Campbell Albatross,Thalassarche impavida,Pelagic,VU,0,NA,TRUE,TRUE,1,1,1,2,0,0,0,2,1,1,1,1,0,0,0,"Central and Eastern Pacific Flyway,Southern Ocean Flyway",Increasing
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Buller's Albatross,Thalassarche bulleri,Pelagic,NT,0,NA,TRUE,TRUE,1,1,1,1,1,1,2,2,2,2,2,2,0,1,0,Central and Eastern Pacific Flyway,Stable
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Shy Albatross,Thalassarche cauta,Pelagic,NT,0,NA,TRUE,TRUE,1,1,1,2,0,0,0,0,2,1,1,1,0,1,0,Southern Ocean Flyway,Stable
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,White-capped Albatross,Thalassarche steadi,Pelagic,NT,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,0,2,2,2,0,0,0,"Atlantic Flyway,Southern Ocean Flyway",Decreasing
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Chatham Albatross,Thalassarche eremita,Pelagic,VU,0,NA,TRUE,TRUE,1,1,1,2,0,0,0,2,1,1,1,1,0,1,0,Central and Eastern Pacific Flyway,Stable
+PROCELLARIIFORMES,Diomedeidae,Albatrosses,NA,NA,Salvin's Albatross,Thalassarche salvini,Pelagic,VU,0,NA,TRUE,TRUE,1,1,1,2,0,0,0,2,1,1,1,1,0,1,0,"Central and Eastern Pacific Flyway,Southern Ocean Flyway",Unknown
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Northern Giant Petrel,Macronectes halli,Pelagic,LC,1,n,TRUE,TRUE,1,2,0,0,0,0,0,2,1,1,1,1,0,1,0,Southern Ocean Flyway,Increasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Southern Giant Petrel,Macronectes giganteus,Pelagic,LC,1,n,TRUE,TRUE,1,1,1,2,0,0,0,0,2,1,1,1,0,1,0,"Atlantic Flyway,Southern Ocean Flyway",Increasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Northern Fulmar,Fulmarus glacialis,Pelagic,LC,1,n,TRUE,TRUE,0,0,0,0,2,1,1,1,1,2,0,0,1,1,0,"Atlantic Flyway,Central and Eastern Pacific Flyway",Increasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Southern Fulmar,Fulmarus glacialoides,Pelagic,LC,1,n,TRUE,TRUE,1,1,2,0,0,0,0,0,0,0,2,1,0,1,0,Southern Ocean Flyway,Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Antarctic Petrel,Thalassoica antarctica,Pelagic,LC,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,0,0,0,2,1,1,1,0,Southern Ocean Flyway,Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Cape Petrel,Daption capense,Pelagic,LC,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,0,0,0,2,1,0,1,0,"Atlantic Flyway,Central and Eastern Pacific Flyway,Southern Ocean Flyway",Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Snow Petrel,Pagodroma nivea,Pelagic,LC,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,1,1,Southern Ocean Flyway,Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Blue Petrel,Halobaena caerulea,Pelagic,LC,0,NA,TRUE,TRUE,1,2,0,0,0,0,0,2,1,1,1,1,0,1,0,Southern Ocean Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Broad-billed Prion,Pachyptila vittata,Pelagic,LC,0,NA,TRUE,TRUE,2,0,0,0,0,0,2,1,1,1,1,1,0,1,0,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Salvin's Prion,Pachyptila salvini,Pelagic,LC,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,0,2,1,1,1,0,0,0,Southern Ocean Flyway,Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,MacGillivray's Prion,Pachyptila macgillivrayi,Pelagic,CR,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,2,2,1,1,1,0,0,0,"Atlantic Flyway,Southern Ocean Flyway",Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Antarctic Prion,Pachyptila desolata,Pelagic,LC,1,n,TRUE,TRUE,1,1,2,0,0,0,0,0,0,2,1,1,0,0,0,"Atlantic Flyway,Central and Eastern Pacific Flyway,Southern Ocean Flyway",Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Slender-billed Prion,Pachyptila belcheri,Pelagic,LC,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,0,0,2,1,1,0,1,0,"Atlantic Flyway,Southern Ocean Flyway",Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Fairy Prion,Pachyptila turtur,Pelagic,LC,0,NA,TRUE,TRUE,0,0,0,0,0,0,2,2,2,1,1,2,0,1,0,Southern Ocean Flyway,Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Fulmar Prion,Pachyptila crassirostris,Pelagic,LC,0,NA,TRUE,TRUE,1,2,2,0,0,0,2,2,2,1,1,1,0,0,0,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Kerguelen Petrel,Aphrodroma brevirostris,Pelagic,LC,0,NA,TRUE,TRUE,1,1,0,2,2,2,2,1,1,1,1,1,0,0,0,Southern Ocean Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Large Saint Helena Petrel,Pterodroma rupinarum,Pelagic,EX,0,NA,FALSE,FALSE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,White-winged Petrel,Pterodroma leucoptera,Pelagic,VU,0,NA,TRUE,TRUE,1,1,1,2,0,0,0,0,0,0,2,1,0,1,0,"Central and Eastern Pacific Flyway,Southern Ocean Flyway,Western Pacific Flyway",Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Collared Petrel,Pterodroma brevipes,Pelagic,VU,0,NA,TRUE,TRUE,0,2,1,1,1,1,2,2,2,0,0,0,0,0,0,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Masatierra Petrel,Pterodroma defilippiana,Pelagic,VU,0,NA,TRUE,TRUE,1,1,2,0,0,0,2,1,1,1,1,1,0,0,0,Central and Eastern Pacific Flyway,Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Stejneger's Petrel,Pterodroma longirostris,Pelagic,VU,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,0,0,0,2,1,1,1,0,Central and Eastern Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Cook's Petrel,Pterodroma cookii,Pelagic,VU,0,NA,TRUE,TRUE,1,1,1,2,0,0,0,2,1,1,1,1,0,1,0,Central and Eastern Pacific Flyway,Increasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Pycroft's Petrel,Pterodroma pycrofti,Pelagic,VU,0,NA,TRUE,TRUE,1,1,2,2,0,0,0,0,0,2,1,1,0,1,0,Central and Eastern Pacific Flyway,Increasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Bonin Petrel,Pterodroma hypoleuca,Pelagic,LC,0,NA,TRUE,TRUE,1,1,1,1,1,2,0,2,1,1,1,1,0,0,0,"Central and Eastern Pacific Flyway,Western Pacific Flyway",Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Black-winged Petrel,Pterodroma nigripennis,Pelagic,LC,0,NA,TRUE,TRUE,1,1,1,2,2,0,0,0,0,2,2,1,0,1,0,Central and Eastern Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Chatham Islands Petrel,Pterodroma axillaris,Pelagic,VU,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,0,0,0,2,1,0,1,0,Central and Eastern Pacific Flyway,Increasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Murphy's Petrel,Pterodroma ultima,Pelagic,LC,0,NA,TRUE,TRUE,1,1,1,2,0,0,2,1,1,1,1,1,0,1,0,Central and Eastern Pacific Flyway,Unknown
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Providence Petrel,Pterodroma solandri,Pelagic,LC,0,NA,TRUE,TRUE,0,2,2,2,1,1,1,1,1,1,2,0,0,1,0,"Central and Eastern Pacific Flyway,Western Pacific Flyway",Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Kermadec Petrel,Pterodroma neglecta,Pelagic,LC,0,NA,TRUE,TRUE,1,1,1,1,1,2,0,0,0,0,2,1,0,1,0,Central and Eastern Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Trindade Petrel,Pterodroma arminjoniana,Pelagic,VU,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,1,0,"Atlantic Flyway,East Indian Ocean Flyway,North Indian Ocean Flyway",Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Herald Petrel,Pterodroma heraldica,Pelagic,LC,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,1,1,Central and Eastern Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Henderson Petrel,Pterodroma atrata,Pelagic,EN,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,1,1,Central and Eastern Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Phoenix Petrel,Pterodroma alba,Pelagic,VU,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,Central and Eastern Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Barau's Petrel,Pterodroma baraui,Pelagic,EN,0,NA,TRUE,TRUE,1,1,1,2,0,0,0,0,2,2,2,1,0,1,0,East Indian Ocean Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Mottled Petrel,Pterodroma inexpectata,Pelagic,NT,0,NA,TRUE,TRUE,1,1,1,1,2,0,0,0,0,2,1,1,0,1,0,Central and Eastern Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Hawaiian Petrel,Pterodroma sandwichensis,Pelagic,EN,0,NA,TRUE,TRUE,0,2,1,1,1,1,1,1,1,2,0,0,0,0,0,Central and Eastern Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Galapagos Petrel,Pterodroma phaeopygia,Pelagic,CR,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,1,1,Central and Eastern Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,White-necked Petrel,Pterodroma cervicalis,Pelagic,VU,0,NA,TRUE,TRUE,1,1,1,1,2,2,0,0,0,2,2,1,0,1,0,"Central and Eastern Pacific Flyway,Western Pacific Flyway",Increasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Juan Fernandez Petrel,Pterodroma externa,Pelagic,VU,0,NA,TRUE,TRUE,1,1,1,1,2,2,0,0,0,2,2,1,0,1,0,Central and Eastern Pacific Flyway,Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Soft-plumaged Petrel,Pterodroma mollis,Pelagic,LC,0,NA,TRUE,TRUE,1,1,1,2,2,0,0,2,2,2,1,1,0,1,0,"Central and Eastern Pacific Flyway,Southern Ocean Flyway",Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Bermuda Petrel,Pterodroma cahow,Pelagic,EN,0,NA,TRUE,TRUE,1,1,1,1,1,2,0,0,0,2,1,1,0,1,0,Atlantic Flyway,Increasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Black-capped Petrel,Pterodroma hasitata,Pelagic,EN,0,NA,TRUE,TRUE,1,1,1,1,1,1,1,2,0,0,2,1,1,1,0,Atlantic Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Jamaican Petrel,Pterodroma caribbaea,Pelagic,CR (PE),0,NA,FALSE,FALSE,1,1,1,1,2,2,0,0,2,1,1,1,0,0,0,Atlantic Flyway,Unknown
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Cape Verde Petrel,Pterodroma feae,Pelagic,NT,0,NA,TRUE,TRUE,2,2,2,2,2,0,2,2,2,2,2,2,0,1,0,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Desertas Petrel,Pterodroma deserta,Pelagic,VU,0,NA,TRUE,TRUE,DD,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,1,0,Atlantic Flyway,Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Zino's Petrel,Pterodroma madeira,Pelagic,EN,0,NA,TRUE,TRUE,0,0,0,2,1,1,1,1,1,2,0,0,0,1,0,Atlantic Flyway,Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Magenta Petrel,Pterodroma magentae,Pelagic,CR,0,NA,TRUE,TRUE,1,1,1,2,2,0,0,0,2,2,1,1,0,1,0,Central and Eastern Pacific Flyway,Increasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Atlantic Petrel,Pterodroma incerta,Pelagic,EN,0,NA,TRUE,TRUE,2,0,2,1,1,1,1,1,1,1,1,1,0,1,0,Atlantic Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,White-headed Petrel,Pterodroma lessonii,Pelagic,LC,0,NA,TRUE,TRUE,1,1,1,1,2,2,0,2,1,1,1,1,0,1,0,Southern Ocean Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Great-winged Petrel,Pterodroma macroptera,Pelagic,LC,1,n,TRUE,TRUE,0,0,0,2,1,1,1,1,1,1,2,0,0,1,0,Southern Ocean Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Grey-faced Petrel,Pterodroma gouldi,Pelagic,LC,0,NA,TRUE,TRUE,0,0,0,2,1,1,1,1,1,1,1,2,0,0,0,Central and Eastern Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Grey Petrel,Procellaria cinerea,Pelagic,NT,0,NA,TRUE,TRUE,0,2,1,1,1,1,1,1,1,2,2,2,0,1,0,"Central and Eastern Pacific Flyway,Southern Ocean Flyway",Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,White-chinned Petrel,Procellaria aequinoctialis,Pelagic,VU,1,n,TRUE,TRUE,1,1,1,1,2,0,0,0,0,2,1,1,0,1,0,"Atlantic Flyway,Central and Eastern Pacific Flyway,Southern Ocean Flyway",Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Spectacled Petrel,Procellaria conspicillata,Pelagic,VU,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,0,0,2,1,1,0,1,0,Atlantic Flyway,Increasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Westland Petrel,Procellaria westlandica,Pelagic,EN,0,NA,TRUE,TRUE,0,0,2,1,1,1,1,1,1,1,1,2,0,1,0,Central and Eastern Pacific Flyway,Unknown
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Black Petrel,Procellaria parkinsoni,Pelagic,VU,0,NA,TRUE,TRUE,1,1,1,1,2,2,2,0,0,0,2,1,0,1,0,Central and Eastern Pacific Flyway,Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Wedge-tailed Shearwater,Ardenna pacifica,Pelagic,LC,0,NA,TRUE,TRUE,2,2,1,1,1,1,1,1,1,1,1,2,0,0,0,"Central and Eastern Pacific Flyway,East Indian Ocean Flyway,North Indian Ocean Flyway,Western Pacific Flyway",Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Buller's Shearwater,Ardenna bulleri,Pelagic,VU,0,NA,TRUE,TRUE,1,1,1,1,2,0,0,0,2,1,1,1,0,0,0,"Central and Eastern Pacific Flyway,Western Pacific Flyway",Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Short-tailed Shearwater,Ardenna tenuirostris,Pelagic,LC,1,n,TRUE,TRUE,1,1,1,2,0,0,0,0,2,1,1,1,0,0,0,"Central and Eastern Pacific Flyway,Western Pacific Flyway",Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Sooty Shearwater,Ardenna grisea,Pelagic,NT,1,n,TRUE,TRUE,1,1,1,2,0,0,0,0,2,1,1,1,0,0,0,"Atlantic Flyway,Central and Eastern Pacific Flyway,Western Pacific Flyway",Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Great Shearwater,Ardenna gravis,Pelagic,LC,1,n,TRUE,TRUE,1,1,1,1,2,0,0,0,2,1,1,1,0,0,0,Atlantic Flyway,Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Flesh-footed Shearwater,Ardenna carneipes,Pelagic,NT,0,NA,TRUE,TRUE,1,1,1,2,2,0,0,0,2,2,1,1,0,0,0,"Central and Eastern Pacific Flyway,East Indian Ocean Flyway,North Indian Ocean Flyway,Western Pacific Flyway",Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Pink-footed Shearwater,Ardenna creatopus,Pelagic,VU,0,NA,TRUE,TRUE,1,1,1,1,2,0,0,0,0,2,1,1,0,0,0,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Streaked Shearwater,Calonectris leucomelas,Pelagic,NT,0,NA,TRUE,TRUE,0,0,2,1,1,1,1,1,1,1,2,0,0,1,0,Western Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Scopoli's Shearwater,Calonectris diomedea,Pelagic,LC,0,NA,TRUE,TRUE,0,2,1,1,1,1,1,1,1,2,0,0,1,1,0,Atlantic Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Cory's Shearwater,Calonectris borealis,Pelagic,LC,0,NA,TRUE,TRUE,0,2,1,1,1,1,1,1,1,1,2,0,0,0,0,Atlantic Flyway,Unknown
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Cape Verde Shearwater,Calonectris edwardsii,Pelagic,NT,0,NA,TRUE,TRUE,0,0,2,1,1,1,1,1,1,1,2,0,0,1,0,Atlantic Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Christmas Shearwater,Puffinus nativitatis,Pelagic,LC,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,Central and Eastern Pacific Flyway,Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Galapagos Shearwater,Puffinus subalaris,Pelagic,LC,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Fluttering Shearwater,Puffinus gavia,Pelagic,LC,0,NA,TRUE,TRUE,1,2,0,0,0,0,0,2,1,1,1,1,0,1,0,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Hutton's Shearwater,Puffinus huttoni,Pelagic,EN,0,NA,TRUE,TRUE,2,2,2,2,0,0,0,2,2,2,2,2,0,1,0,Western Pacific Flyway,Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Black-vented Shearwater,Puffinus opisthomelas,Pelagic,NT,0,NA,TRUE,TRUE,1,1,1,1,1,1,1,1,2,0,0,2,0,1,0,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Bryan's Shearwater,Puffinus bryani,Pelagic,CR,0,NA,TRUE,TRUE,1,2,0,0,0,0,0,0,0,0,0,2,0,0,0,"Central and Eastern Pacific Flyway,Western Pacific Flyway",Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Rapa Shearwater,Puffinus myrtae,Pelagic,CR,0,NA,TRUE,TRUE,0,0,0,2,2,1,1,1,1,2,2,0,0,0,0,Central and Eastern Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Newell's Shearwater,Puffinus newelli,Pelagic,CR,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,Central and Eastern Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Townsend's Shearwater,Puffinus auricularis,Pelagic,CR,0,NA,TRUE,TRUE,0,2,1,1,1,1,1,2,0,0,0,0,0,0,0,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Tropical Shearwater,Puffinus bailloni,Pelagic,LC,0,NA,TRUE,TRUE,2,2,2,2,0,0,2,2,2,2,2,2,0,0,0,"Central and Eastern Pacific Flyway,North Indian Ocean Flyway,Western Pacific Flyway",Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Persian Shearwater,Puffinus persicus,Pelagic,LC,0,NA,TRUE,TRUE,1,1,1,2,0,0,0,0,2,1,1,1,0,0,0,North Indian Ocean Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Bannerman's Shearwater,Puffinus bannermani,Pelagic,EN,0,NA,TRUE,TRUE,DD,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,0,0,Western Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Manx Shearwater,Puffinus puffinus,Pelagic,LC,1,n,TRUE,TRUE,0,2,1,1,1,1,1,1,1,2,0,0,1,1,0,Atlantic Flyway,Unknown
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Yelkouan Shearwater,Puffinus yelkouan,Pelagic,VU,0,NA,TRUE,TRUE,1,1,1,1,1,1,2,0,0,0,2,1,1,1,0,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Balearic Shearwater,Puffinus mauretanicus,Pelagic,CR,0,NA,TRUE,TRUE,1,1,1,1,1,2,0,0,2,1,1,1,0,1,0,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Subantarctic Shearwater,Puffinus elegans,Pelagic,LC,0,NA,TRUE,TRUE,2,1,1,1,1,1,1,1,1,1,2,2,0,0,0,Southern Ocean Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Little Shearwater,Puffinus assimilis,Pelagic,LC,0,NA,TRUE,TRUE,2,0,0,2,1,1,1,1,1,1,1,1,0,1,0,Central and Eastern Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Audubon's Shearwater,Puffinus lherminieri,Pelagic,LC,0,NA,TRUE,TRUE,1,1,2,0,2,1,1,1,1,2,0,0,0,1,0,Atlantic Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Heinroth's Shearwater,Puffinus heinrothi,Pelagic,VU,0,NA,TRUE,TRUE,2,1,2,0,0,0,0,2,2,0,0,0,0,0,0,Western Pacific Flyway,Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Fiji Petrel,Pseudobulweria macgillivrayi,Pelagic,CR,0,NA,TRUE,TRUE,0,0,0,2,1,1,1,1,1,1,1,2,0,0,0,"Central and Eastern Pacific Flyway,Western Pacific Flyway",Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Mascarene Petrel,Pseudobulweria aterrima,Pelagic,CR,0,NA,TRUE,TRUE,1,1,1,0,0,0,2,2,2,1,1,2,0,1,0,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Beck's Petrel,Pseudobulweria becki,Pelagic,CR,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,1,0,0,1,Western Pacific Flyway,Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Tahiti Petrel,Pseudobulweria rostrata,Pelagic,NT,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,1,1,"Central and Eastern Pacific Flyway,Western Pacific Flyway",Decreasing
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Bulwer's Petrel,Bulweria bulwerii,Pelagic,LC,0,NA,TRUE,TRUE,0,0,0,0,2,1,1,1,2,0,0,0,0,1,0,"Atlantic Flyway,Central and Eastern Pacific Flyway,East Indian Ocean Flyway,North Indian Ocean Flyway,Western Pacific Flyway",Stable
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Jouanin's Petrel,Bulweria fallax,Pelagic,NT,0,NA,TRUE,TRUE,0,0,0,0,0,0,2,1,1,1,1,2,0,0,0,North Indian Ocean Flyway,Unknown
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Small Saint Helena Petrel,Bulweria bifax,Pelagic,EX,0,NA,FALSE,FALSE,DD,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,0,0,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Whenua Hou Diving-petrel,Pelecanoides whenuahouensis,Pelagic,CR,0,NA,TRUE,TRUE,2,0,0,0,0,0,0,0,2,1,1,1,0,0,0,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Peruvian Diving-petrel,Pelecanoides garnotii,Pelagic,NT,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,1,1,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Magellanic Diving-petrel,Pelecanoides magellani,Pelagic,LC,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,0,0,0,2,1,0,0,0,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,South Georgia Diving-petrel,Pelecanoides georgicus,Pelagic,LC,0,NA,TRUE,TRUE,1,2,0,0,0,0,0,0,2,1,1,1,0,1,0,,NA
+PROCELLARIIFORMES,Procellariidae,"Petrels, Shearwaters",NA,NA,Common Diving-petrel,Pelecanoides urinatrix,Pelagic,LC,0,NA,TRUE,TRUE,0,0,2,1,1,1,1,1,1,1,1,2,0,1,0,Southern Ocean Flyway,Decreasing
+SULIFORMES,Fregatidae,Frigatebirds,,NA,Lesser Frigatebird,Fregata ariel,Pelagic,LC,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,1,1,,NA
+SULIFORMES,Fregatidae,Frigatebirds,,NA,Great Frigatebird,Fregata minor,Pelagic,LC,1,n,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,1,1,,NA
+SULIFORMES,Fregatidae,Frigatebirds,,NA,Christmas Island Frigatebird,Fregata andrewsi,Pelagic,VU,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+SULIFORMES,Fregatidae,Frigatebirds,,NA,Magnificent Frigatebird,Fregata magnificens,Pelagic,LC,1,n,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,,NA
+SULIFORMES,Fregatidae,Frigatebirds,,NA,Ascension Frigatebird,Fregata aquila,Pelagic,VU,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,1,1,,NA
+SULIFORMES,Sulidae,"Gannets, Boobies",,NA,Abbott's Booby,Papasula abbotti,Pelagic,EN,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+SULIFORMES,Sulidae,"Gannets, Boobies",,NA,Northern Gannet,Morus bassanus,Pelagic,LC,1,o,TRUE,TRUE,0,0,0,2,1,1,1,1,1,2,0,0,1,1,0,Atlantic Flyway,Increasing
+SULIFORMES,Sulidae,"Gannets, Boobies",,NA,Cape Gannet,Morus capensis,Pelagic,EN,1,o,TRUE,TRUE,1,1,1,2,0,0,0,0,2,1,1,1,0,1,0,,NA
+SULIFORMES,Sulidae,"Gannets, Boobies",,NA,Australasian Gannet,Morus serrator,Pelagic,LC,0,NA,TRUE,TRUE,1,1,1,1,2,0,0,0,0,2,1,1,0,0,0,,NA
+SULIFORMES,Sulidae,"Gannets, Boobies",,NA,Red-footed Booby,Sula sula,Pelagic,LC,1,n,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,1,1,,NA
+SULIFORMES,Sulidae,"Gannets, Boobies",,NA,Brown Booby,Sula leucogaster,Pelagic,LC,1,n,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,1,1,,NA
+SULIFORMES,Sulidae,"Gannets, Boobies",,NA,Blue-footed Booby,Sula nebouxii,Pelagic,LC,1,n,TRUE,TRUE,0,0,0,0,0,2,1,1,1,1,2,0,0,1,0,,NA
+SULIFORMES,Sulidae,"Gannets, Boobies",,NA,Peruvian Booby,Sula variegata,Pelagic,LC,1,n,TRUE,TRUE,1,2,0,0,0,0,0,0,2,1,1,1,0,1,0,,NA
+SULIFORMES,Sulidae,"Gannets, Boobies",,NA,Masked Booby,Sula dactylatra,Pelagic,LC,0,NA,TRUE,TRUE,2,1,1,1,1,1,1,1,1,1,2,0,0,1,0,,NA
+SULIFORMES,Sulidae,"Gannets, Boobies",,NA,Nazca Booby,Sula granti,Pelagic,LC,0,NA,TRUE,TRUE,1,1,1,1,1,2,0,0,0,2,1,1,0,1,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Crowned Cormorant,Microcarbo coronatus,Coastal,LC,1,o,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Long-tailed Cormorant,Microcarbo africanus,Coastal,LC,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Pygmy Cormorant,Microcarbo pygmaeus,Coastal,LC,1,o,TRUE,TRUE,0,0,0,2,1,1,1,1,1,2,0,0,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Little Cormorant,Microcarbo niger,Coastal,LC,0,NA,TRUE,TRUE,0,0,0,0,0,2,1,2,0,0,0,0,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Little Pied Cormorant,Microcarbo melanoleucos,Coastal,LC,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Red-legged Cormorant,Poikilocarbo gaimardi,Coastal,NT,1,n,TRUE,TRUE,1,2,0,0,0,0,0,0,0,2,1,1,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Rock Shag,Leucocarbo magellanicus,Coastal,LC,1,n,TRUE,TRUE,1,2,0,0,0,0,0,0,0,2,1,1,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Guanay Cormorant,Leucocarbo bougainvilliorum,Coastal,NT,1,n,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Imperial Shag,Leucocarbo atriceps,Coastal,LC,1,n,TRUE,TRUE,1,1,2,0,0,0,0,0,2,1,1,1,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,South Georgia Shag,Leucocarbo georgianus,Coastal,NR,1,n,FALSE,FALSE,2,2,2,0,0,0,0,0,0,2,2,2,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Kerguelen Islands Shag,Leucocarbo verrucosus,Coastal,LC,0,NA,TRUE,TRUE,1,2,0,0,0,0,0,0,2,1,1,1,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Rough-faced Shag,Leucocarbo carunculatus,Coastal,VU,0,NA,TRUE,TRUE,0,0,2,1,1,1,1,1,1,1,1,2,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Stewart Island Shag,Leucocarbo chalconotus,Coastal,VU,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Chatham Islands Shag,Leucocarbo onslowi,Coastal,CR,0,NA,TRUE,TRUE,2,0,0,0,0,0,0,0,2,1,1,1,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Campbell Island Shag,Leucocarbo campbelli,Coastal,VU,0,NA,TRUE,TRUE,0,0,0,0,0,0,0,2,1,1,1,2,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Bounty Islands Shag,Leucocarbo ranfurlyi,Coastal,VU,0,NA,TRUE,TRUE,0,0,0,0,0,0,0,0,0,2,1,2,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Auckland Islands Shag,Leucocarbo colensoi,Coastal,VU,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,0,0,0,2,1,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Double-crested Cormorant,Nannopterum auritum,Coastal,LC,1,n,TRUE,TRUE,2,2,1,1,1,1,1,1,1,2,2,2,0,0,0,Americas Flyway,Increasing
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Neotropical Cormorant,Nannopterum brasilianum,Coastal,LC,1,n,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Flightless Cormorant,Nannopterum harrisi,Coastal,VU,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Brandt's Cormorant,Urile penicillatus,Coastal,LC,1,n,TRUE,TRUE,0,0,0,2,1,1,1,1,2,0,0,0,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Pelagic Cormorant,Urile pelagicus,Coastal,LC,0,NA,TRUE,TRUE,0,2,1,1,1,1,1,1,1,2,0,0,0,0,0,Americas Flyway,Decreasing
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Red-faced Cormorant,Urile urile,Coastal,LC,0,NA,TRUE,TRUE,0,0,0,0,2,1,1,2,0,0,0,0,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Spectacled Cormorant,Urile perspicillatus,Coastal,EX,0,NA,FALSE,FALSE,DD,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,European Shag,Gulosus aristotelis,Coastal,LC,0,NA,TRUE,TRUE,1,1,1,1,1,1,2,0,0,0,2,1,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Great Cormorant,Phalacrocorax carbo,Coastal,LC,1,o,TRUE,TRUE,0,0,0,2,1,1,1,2,0,0,0,0,1,0,0,"African_Eurasian Flyway,Americas Flyway,East Asia-Australasia Flyway",Increasing
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Japanese Cormorant,Phalacrocorax capillatus,Coastal,LC,0,NA,TRUE,TRUE,0,0,0,0,2,1,1,1,2,0,0,0,0,0,0,East Asia-Australasia Flyway,Unknown
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Cape Cormorant,Phalacrocorax capensis,Coastal,EN,1,o,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Socotra Cormorant,Phalacrocorax nigrogularis,Coastal,VU,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Bank Cormorant,Phalacrocorax neglectus,Coastal,EN,1,n,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Indian Cormorant,Phalacrocorax fuscicollis,Coastal,LC,0,NA,TRUE,TRUE,1,1,1,2,0,0,2,1,1,1,1,1,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Little Black Cormorant,Phalacrocorax sulcirostris,Coastal,LC,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Black-faced Cormorant,Phalacrocorax fuscescens,Coastal,LC,0,NA,TRUE,TRUE,1,2,2,1,1,1,1,1,1,1,1,1,0,0,1,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Great Pied Cormorant,Phalacrocorax varius,Coastal,LC,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Spotted Shag,Phalacrocorax punctatus,Coastal,LC,1,n,TRUE,TRUE,1,1,1,2,0,0,0,2,1,1,1,1,0,0,0,,NA
+SULIFORMES,Phalacrocoracidae,Cormorants,,NA,Pitt Island Shag,Phalacrocorax featherstoni,Coastal,EN,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,2,1,1,1,1,0,0,0,,NA
+CHARADRIIFORMES,Chionidae,Sheathbills,NA,NA,Snowy Sheathbill,Chionis albus,Coastal,LC,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,0,0,0,2,1,0,0,0,,NA
+CHARADRIIFORMES,Chionidae,Sheathbills,NA,NA,Black-faced Sheathbill,Chionis minor,Coastal,LC,0,NA,TRUE,TRUE,1,1,1,2,0,0,0,0,0,2,1,1,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Anoinae,NA,Brown Noddy,Anous stolidus,Coastal,LC,0,NA,TRUE,TRUE,2,2,2,2,1,1,1,1,1,1,1,2,0,1,1,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Anoinae,NA,Lesser Noddy,Anous tenuirostris,Coastal,LC,0,NA,TRUE,TRUE,0,0,0,0,2,1,1,1,1,1,1,2,0,1,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Anoinae,NA,Black Noddy,Anous minutus,Coastal,LC,0,NA,TRUE,TRUE,0,0,0,2,1,1,1,1,1,1,2,0,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Anoinae,NA,Blue Noddy,Anous ceruleus,Coastal,LC,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Anoinae,NA,Grey Noddy,Anous albivittus,Coastal,LC,0,NA,TRUE,TRUE,1,1,1,2,0,0,0,2,1,1,1,1,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Gyginae,NA,Atlantic White Tern,Gygis alba,Coastal,LC,0,NA,TRUE,TRUE,1,1,1,1,1,1,1,2,2,2,2,2,0,1,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Gyginae,NA,Common White Tern,Gygis candida,Coastal,LC,0,NA,TRUE,TRUE,1,1,1,1,1,1,1,2,2,2,2,2,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Gyginae,NA,Little White Tern,Gygis microrhyncha,Coastal,LC,0,NA,TRUE,TRUE,1,1,1,1,1,1,1,2,2,2,2,2,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Rynchopinae,NA,Black Skimmer,Rynchops niger,Coastal,LC,1,n,TRUE,TRUE,0,0,0,0,0,2,1,1,2,0,0,0,1,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Rynchopinae,NA,African Skimmer,Rynchops flavirostris,Coastal,LC,0,NA,TRUE,TRUE,0,0,2,1,1,1,1,1,1,1,2,0,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Rynchopinae,NA,Indian Skimmer,Rynchops albicollis,Coastal,EN,0,NA,TRUE,TRUE,0,2,1,1,1,2,0,0,0,0,0,0,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Saunders's Gull,Saundersilarus saundersi,Coastal,VU,0,NA,TRUE,TRUE,0,0,2,1,1,2,0,0,0,0,0,0,0,0,0,East Asia-Australasia Flyway,Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Little Gull,Hydrocoloeus minutus,Coastal,LC,1,o,TRUE,TRUE,0,0,0,0,0,2,1,2,0,0,0,0,0,0,0,"African_Eurasian Flyway,Americas Flyway,East Asia-Australasia Flyway",Increasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Ross's Gull,Rhodostethia rosea,Coastal,LC,0,NA,TRUE,TRUE,0,0,0,0,2,1,2,0,0,0,0,0,0,1,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Swallow-tailed Gull,Creagrus furcatus,Coastal,LC,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,"Americas Flyway,Central and Eastern Pacific Flyway",Unknown
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Sabine's Gull,Xema sabini,Coastal,LC,1,n,TRUE,TRUE,0,0,0,0,2,1,1,2,0,0,0,0,1,1,0,"Atlantic Flyway,Central and Eastern Pacific Flyway",Stable
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Ivory Gull,Pagophila eburnea,Coastal,NT,1,o,TRUE,TRUE,0,0,0,2,1,1,2,0,0,0,0,0,1,1,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Red-legged Kittiwake,Rissa brevirostris,Coastal,VU,0,NA,TRUE,TRUE,0,0,0,0,0,2,1,1,1,2,0,0,0,0,0,Central and Eastern Pacific Flyway,Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Black-legged Kittiwake,Rissa tridactyla,Coastal,VU,1,n,TRUE,TRUE,0,0,0,2,1,1,1,2,0,0,0,0,1,1,0,"Atlantic Flyway,Central and Eastern Pacific Flyway",Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Bonaparte's Gull,Larus philadelphia,Coastal,LC,1,n,TRUE,TRUE,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,Americas Flyway,Increasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Slender-billed Gull,Larus genei,Coastal,LC,1,n,TRUE,TRUE,0,0,2,1,1,1,2,0,0,0,0,0,0,1,0,African_Eurasian Flyway,Unknown
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Brown-headed Gull,Larus brunnicephalus,Coastal,LC,1,n,TRUE,TRUE,0,0,0,0,2,1,2,0,0,0,0,0,0,0,0,"Central Asia Flyway,East Asia-Australasia Flyway",Stable
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Black-headed Gull,Larus ridibundus,Coastal,LC,1,o,TRUE,TRUE,0,2,1,1,1,1,2,0,0,0,0,0,0,0,0,"African_Eurasian Flyway,Americas Flyway,Central Asia Flyway,East Asia-Australasia Flyway",Unknown
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Andean Gull,Larus serranus,Coastal,LC,0,NA,TRUE,TRUE,0,0,0,0,0,0,2,1,1,2,0,0,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Brown-hooded Gull,Larus maculipennis,Coastal,LC,1,n,TRUE,TRUE,1,1,2,0,0,0,0,0,0,2,1,1,0,0,0,Americas Flyway,Increasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Hartlaub's Gull,Larus hartlaubii,Coastal,LC,1,o,TRUE,TRUE,1,1,1,1,1,2,0,0,2,1,1,1,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Grey-headed Gull,Larus cirrocephalus,Coastal,LC,1,o,TRUE,TRUE,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Silver Gull,Larus novaehollandiae,Coastal,LC,1,n,TRUE,TRUE,0,0,2,1,1,1,1,1,1,1,1,2,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Black-billed Gull,Larus bulleri,Coastal,NT,0,NA,TRUE,TRUE,1,2,0,0,0,0,0,2,1,1,1,1,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Grey Gull,Larus modestus,Coastal,LC,1,n,TRUE,TRUE,1,1,2,0,0,0,0,2,1,1,1,0,0,0,0,Americas Flyway,Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Dolphin Gull,Larus scoresbii,Coastal,LC,0,NA,TRUE,TRUE,1,2,0,0,0,0,0,0,2,1,1,1,0,0,0,Americas Flyway,Stable
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Franklin's Gull,Larus pipixcan,Coastal,LC,1,n,TRUE,TRUE,0,0,0,2,1,1,1,1,2,0,0,0,0,0,0,Americas Flyway,Increasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Laughing Gull,Larus atricilla,Coastal,LC,1,n,TRUE,TRUE,0,0,0,2,1,1,1,2,0,0,0,0,0,0,0,Americas Flyway,Increasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Lava Gull,Larus fuliginosus,Coastal,VU,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Pallas's Gull,Larus ichthyaetus,Coastal,LC,1,o,TRUE,TRUE,0,0,2,1,2,0,0,0,0,0,0,0,0,0,0,"African_Eurasian Flyway,Central Asia Flyway",Increasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Relict Gull,Larus relictus,Coastal,VU,0,NA,TRUE,TRUE,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Mediterranean Gull,Larus melanocephalus,Coastal,LC,1,n,TRUE,TRUE,0,0,0,2,1,1,1,2,0,0,0,0,0,0,0,African_Eurasian Flyway,Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Sooty Gull,Larus hemprichii,Coastal,LC,0,NA,TRUE,TRUE,0,0,0,0,0,2,1,1,1,1,2,0,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,White-eyed Gull,Larus leucophthalmus,Coastal,LC,0,NA,TRUE,TRUE,0,0,0,0,0,2,1,1,2,0,0,0,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Audouin's Gull,Larus audouinii,Coastal,VU,1,n,TRUE,TRUE,0,2,1,1,1,1,1,2,0,0,0,0,0,1,0,African_Eurasian Flyway,Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Heermann's Gull,Larus heermanni,Coastal,NT,0,NA,TRUE,TRUE,0,2,1,1,1,1,2,0,0,0,0,0,0,0,0,Americas Flyway,Unknown
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Pacific Gull,Larus pacificus,Coastal,LC,0,NA,TRUE,TRUE,2,0,0,0,0,0,0,0,2,1,1,1,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Black-tailed Gull,Larus crassirostris,Coastal,LC,1,n,TRUE,TRUE,0,0,0,2,1,1,1,1,2,0,0,0,0,0,0,East Asia-Australasia Flyway,Stable
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Belcher's Gull,Larus belcheri,Coastal,LC,1,n,TRUE,TRUE,1,2,0,0,0,0,0,0,0,0,2,1,0,1,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Olrog's Gull,Larus atlanticus,Coastal,NT,0,NA,TRUE,TRUE,2,0,0,0,0,0,0,2,1,1,1,1,0,0,0,Americas Flyway,Stable
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Ring-billed Gull,Larus delawarensis,Coastal,LC,1,n,TRUE,TRUE,0,0,0,2,1,1,1,2,0,0,0,0,0,1,0,Americas Flyway,Increasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Mew Gull,Larus canus,Coastal,LC,1,o,TRUE,TRUE,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,"African_Eurasian Flyway,Americas Flyway,East Asia-Australasia Flyway",Unknown
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Yellow-footed Gull,Larus livens,Coastal,LC,0,NA,TRUE,TRUE,1,1,1,1,1,1,2,0,0,0,2,1,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Western Gull,Larus occidentalis,Coastal,LC,1,n,TRUE,TRUE,0,0,0,2,1,1,1,2,0,0,0,0,0,1,0,Americas Flyway,Increasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,California Gull,Larus californicus,Coastal,LC,1,n,TRUE,TRUE,0,0,0,2,1,1,1,2,0,0,0,0,0,0,0,Americas Flyway,Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Kelp Gull,Larus dominicanus,Coastal,LC,1,n,TRUE,TRUE,2,0,0,0,0,0,0,0,2,1,1,1,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Lesser Black-backed Gull,Larus fuscus,Coastal,LC,1,o,TRUE,TRUE,0,0,2,1,1,1,1,2,0,0,0,0,1,1,0,African_Eurasian Flyway,Increasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,European Herring Gull,Larus argentatus,Coastal,LC,1,o,TRUE,TRUE,0,0,2,1,1,2,0,0,0,0,0,0,1,1,0,"African_Eurasian Flyway,Americas Flyway,East Asia-Australasia Flyway",Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Armenian Gull,Larus armenicus,Coastal,LC,1,o,TRUE,TRUE,0,0,0,2,1,1,1,2,0,0,0,0,1,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Yellow-legged Gull,Larus michahellis,Coastal,LC,1,n,TRUE,TRUE,0,0,2,1,1,1,2,0,0,0,0,0,1,1,0,African_Eurasian Flyway,Increasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Caspian Gull,Larus cachinnans,Coastal,LC,1,n,TRUE,TRUE,0,0,2,1,1,2,0,0,0,0,0,0,1,0,0,"African_Eurasian Flyway,Central Asia Flyway",Increasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Arctic Herring Gull,Larus smithsonianus,Coastal,LC,1,n,TRUE,TRUE,0,0,2,1,1,1,1,1,2,0,0,0,1,1,0,"African_Eurasian Flyway,Americas Flyway,East Asia-Australasia Flyway",Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Iceland Gull,Larus glaucoides,Coastal,LC,1,n,TRUE,TRUE,0,0,0,2,1,1,1,1,2,0,0,0,0,0,0,"African_Eurasian Flyway,Americas Flyway",Stable
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Slaty-backed Gull,Larus schistisagus,Coastal,LC,1,n,TRUE,TRUE,0,0,0,2,1,1,1,2,0,0,0,0,0,0,0,East Asia-Australasia Flyway,Unknown
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Glaucous-winged Gull,Larus glaucescens,Coastal,LC,1,n,TRUE,TRUE,0,2,1,1,1,1,2,0,0,0,0,0,0,0,0,"Americas Flyway,East Asia-Australasia Flyway",Increasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Glaucous Gull,Larus hyperboreus,Coastal,LC,1,n,TRUE,TRUE,0,0,0,2,1,1,1,1,2,0,0,0,1,0,0,"African_Eurasian Flyway,Americas Flyway,East Asia-Australasia Flyway",Stable
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Larinae,NA,Great Black-backed Gull,Larus marinus,Coastal,LC,1,o,TRUE,TRUE,0,0,2,1,1,1,1,2,0,0,0,0,1,1,0,"African_Eurasian Flyway,Americas Flyway",Unknown
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Aleutian Tern,Onychoprion aleuticus,Coastal,VU,0,NA,TRUE,TRUE,0,0,0,0,2,1,1,1,2,0,0,0,0,0,0,East Asia-Australasia Flyway,Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Sooty Tern,Onychoprion fuscatus,Coastal,LC,0,NA,TRUE,TRUE,2,1,1,1,1,1,1,1,2,2,0,0,1,1,0,"Atlantic Flyway,Central and Eastern Pacific Flyway,East Indian Ocean Flyway,North Indian Ocean Flyway,Western Pacific Flyway",Unknown
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Bridled Tern,Onychoprion anaethetus,Coastal,LC,0,NA,TRUE,TRUE,2,0,0,2,2,2,2,2,2,2,2,2,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Grey-backed Tern,Onychoprion lunatus,Coastal,LC,0,NA,TRUE,TRUE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Little Tern,Sternula albifrons,Coastal,LC,1,n,TRUE,TRUE,0,0,2,1,1,1,1,2,0,0,0,0,0,0,0,"African_Eurasian Flyway,East Asia-Australasia Flyway",Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Saunders's Tern,Sternula saundersi,Coastal,LC,0,NA,TRUE,TRUE,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,"African_Eurasian Flyway,Central Asia Flyway",Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Least Tern,Sternula antillarum,Coastal,LC,0,NA,TRUE,TRUE,0,0,0,2,1,1,2,0,0,0,0,0,0,0,0,Americas Flyway,Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Yellow-billed Tern,Sternula superciliaris,Coastal,LC,0,NA,TRUE,TRUE,0,0,0,0,0,0,2,0,0,0,2,2,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Peruvian Tern,Sternula lorata,Coastal,EN,0,NA,TRUE,TRUE,1,2,2,2,2,0,2,2,2,2,1,1,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Fairy Tern,Sternula nereis,Coastal,VU,0,NA,TRUE,TRUE,2,0,0,0,0,2,2,2,1,1,2,2,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Damara Tern,Sternula balaenarum,Coastal,LC,0,NA,TRUE,TRUE,2,0,0,0,0,2,2,2,1,1,2,2,0,0,0,African_Eurasian Flyway,Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Large-billed Tern,Phaetusa simplex,Coastal,LC,0,NA,TRUE,TRUE,0,0,0,0,2,2,0,2,2,2,2,2,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Common Gull-billed Tern,Gelochelidon nilotica,Coastal,LC,1,n,TRUE,TRUE,0,0,2,1,1,1,2,0,0,2,1,1,1,0,0,"African_Eurasian Flyway,Americas Flyway,Central Asia Flyway,East Asia-Australasia Flyway",Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Australian Gull-billed Tern,Gelochelidon macrotarsa,Coastal,LC,0,NA,TRUE,TRUE,1,1,1,1,2,0,0,0,2,1,1,1,0,0,0,"African_Eurasian Flyway,East Asia-Australasia Flyway",Unknown
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Caspian Tern,Hydroprogne caspia,Coastal,LC,1,n,TRUE,TRUE,0,0,2,1,1,1,1,1,1,1,1,2,1,1,0,"African_Eurasian Flyway,Americas Flyway,Central Asia Flyway,East Asia-Australasia Flyway",Increasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Inca Tern,Larosterna inca,Coastal,NT,1,n,TRUE,TRUE,0,0,0,2,1,1,1,2,0,2,1,2,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Roseate Tern,Sterna dougallii,Coastal,LC,1,n,TRUE,TRUE,0,0,0,2,1,1,1,1,1,2,0,0,1,1,0,"African_Eurasian Flyway,Americas Flyway,Central Asia Flyway,East Asia-Australasia Flyway",Unknown
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,White-fronted Tern,Sterna striata,Coastal,NT,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,0,0,2,1,1,0,0,0,East Asia-Australasia Flyway,Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Black-naped Tern,Sterna sumatrana,Coastal,LC,0,NA,TRUE,TRUE,2,2,0,0,2,2,2,2,2,2,2,2,0,1,0,East Asia-Australasia Flyway,Unknown
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,South American Tern,Sterna hirundinacea,Coastal,LC,1,n,TRUE,TRUE,1,1,1,1,1,1,1,2,0,0,2,1,0,0,0,Americas Flyway,Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Common Tern,Sterna hirundo,Coastal,LC,1,o,TRUE,TRUE,0,0,0,2,1,1,1,1,1,2,0,0,1,1,0,"African_Eurasian Flyway,Americas Flyway,Central Asia Flyway,East Asia-Australasia Flyway",Unknown
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,White-cheeked Tern,Sterna repressa,Coastal,LC,0,NA,TRUE,TRUE,0,0,0,0,2,2,2,2,2,0,0,0,0,0,0,Central Asia Flyway,Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Arctic Tern,Sterna paradisaea,Coastal,LC,1,n,TRUE,TRUE,0,0,0,0,2,1,1,1,2,0,0,0,1,1,0,"Atlantic Flyway,Central and Eastern Pacific Flyway,East Indian Ocean Flyway,Southern Ocean Flyway",Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Antarctic Tern,Sterna vittata,Coastal,LC,0,NA,TRUE,TRUE,2,2,2,0,0,0,0,0,0,2,2,1,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Kerguelen Tern,Sterna virgata,Coastal,NT,0,NA,TRUE,TRUE,1,1,2,0,0,0,0,0,2,1,1,1,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Forster's Tern,Sterna forsteri,Coastal,LC,1,n,TRUE,TRUE,0,0,0,2,1,1,1,2,0,0,0,0,0,0,0,Americas Flyway,Increasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Snowy-crowned Tern,Sterna trudeaui,Coastal,LC,0,NA,TRUE,TRUE,2,0,0,0,0,0,0,0,2,2,2,2,0,0,0,Americas Flyway,Stable
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Black-bellied Tern,Sterna acuticauda,Coastal,EN,0,NA,TRUE,TRUE,0,2,1,1,2,0,0,0,0,0,0,0,0,0,0,,NA
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Lesser Crested Tern,Thalasseus bengalensis,Coastal,LC,0,NA,TRUE,TRUE,0,0,2,2,2,2,2,2,2,2,2,2,0,0,0,"African_Eurasian Flyway,Central Asia Flyway,East Asia-Australasia Flyway",Stable
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Chinese Crested Tern,Thalasseus bernsteini,Coastal,CR,0,NA,FALSE,FALSE,0,0,0,0,2,1,1,2,0,0,0,0,0,0,0,East Asia-Australasia Flyway,Decreasing
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Elegant Tern,Thalasseus elegans,Coastal,NT,1,n,TRUE,TRUE,0,0,2,1,1,1,1,2,0,0,0,0,0,0,0,Americas Flyway,Stable
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Sandwich Tern,Thalasseus sandvicensis,Coastal,LC,1,o,TRUE,TRUE,0,0,2,1,1,2,2,2,2,2,0,0,0,0,0,"African_Eurasian Flyway,Americas Flyway,Central Asia Flyway",Stable
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Royal Tern,Thalasseus maximus,Coastal,LC,1,n,TRUE,TRUE,0,0,2,1,1,1,1,1,1,1,2,0,0,0,0,"African_Eurasian Flyway,Americas Flyway",Stable
+CHARADRIIFORMES,Laridae,"Gulls, Terns, Skimmers",Sterninae,NA,Greater Crested Tern,Thalasseus bergii,Coastal,LC,1,o,TRUE,TRUE,2,0,0,2,1,1,1,1,1,1,1,1,0,0,0,"African_Eurasian Flyway,Central Asia Flyway,East Asia-Australasia Flyway",Stable
+CHARADRIIFORMES,Stercorariidae,Skuas,NA,NA,Long-tailed Jaeger,Stercorarius longicaudus,Pelagic,LC,0,NA,TRUE,TRUE,0,0,0,0,2,2,1,2,0,0,0,0,1,1,0,"Atlantic Flyway,Central and Eastern Pacific Flyway",Stable
+CHARADRIIFORMES,Stercorariidae,Skuas,NA,NA,Arctic Jaeger,Stercorarius parasiticus,Pelagic,LC,1,n,TRUE,TRUE,0,0,0,0,2,1,1,1,1,2,0,0,1,1,0,Atlantic Flyway,Stable
+CHARADRIIFORMES,Stercorariidae,Skuas,NA,NA,Pomarine Jaeger,Stercorarius pomarinus,Pelagic,LC,0,NA,TRUE,TRUE,0,0,0,0,2,1,1,2,2,0,0,0,0,0,0,"Atlantic Flyway,Central and Eastern Pacific Flyway",Stable
+CHARADRIIFORMES,Stercorariidae,Skuas,NA,NA,Great Skua,Catharacta skua,Pelagic,LC,1,n,TRUE,TRUE,0,0,0,0,2,1,1,2,0,0,0,0,0,0,0,Atlantic Flyway,Stable
+CHARADRIIFORMES,Stercorariidae,Skuas,NA,NA,South Polar Skua,Catharacta maccormicki,Pelagic,LC,1,n,TRUE,TRUE,1,2,0,0,0,0,0,0,0,0,2,1,0,0,0,"Atlantic Flyway,Central and Eastern Pacific Flyway,Western Pacific Flyway",Stable
+CHARADRIIFORMES,Stercorariidae,Skuas,NA,NA,Brown Skua,Catharacta antarctica,Pelagic,LC,1,n,TRUE,TRUE,1,2,0,0,0,0,0,0,0,2,1,1,0,0,0,"Atlantic Flyway,Central and Eastern Pacific Flyway,Southern Ocean Flyway",Decreasing
+CHARADRIIFORMES,Stercorariidae,Skuas,NA,NA,Chilean Skua,Catharacta chilensis,Pelagic,LC,1,n,TRUE,TRUE,1,1,2,0,0,0,0,0,0,0,2,1,0,0,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Aethiinae,NA,Rhinoceros Auklet,Cerorhinca monocerata,Pelagic,LC,0,NA,TRUE,TRUE,0,2,2,2,1,1,1,1,2,0,0,0,1,1,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Aethiinae,NA,Tufted Puffin,Fratercula cirrhata,Pelagic,LC,0,NA,TRUE,TRUE,0,2,2,2,2,1,1,2,0,0,0,0,1,0,0,Central and Eastern Pacific Flyway,Stable
+CHARADRIIFORMES,Alcidae,Auks,Aethiinae,NA,Atlantic Puffin,Fratercula arctica,Pelagic,VU,1,n,TRUE,TRUE,0,0,0,2,1,1,2,0,0,0,0,0,1,1,0,Atlantic Flyway,Decreasing
+CHARADRIIFORMES,Alcidae,Auks,Aethiinae,NA,Horned Puffin,Fratercula corniculata,Pelagic,LC,0,NA,TRUE,TRUE,0,0,0,0,2,1,1,1,1,2,0,0,0,0,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Aethiinae,NA,Cassin's Auklet,Ptychoramphus aleuticus,Pelagic,NT,0,NA,TRUE,TRUE,1,1,1,1,1,1,1,2,0,0,2,1,1,0,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Aethiinae,NA,Parakeet Auklet,Aethia psittacula,Pelagic,LC,0,NA,TRUE,TRUE,0,0,0,0,2,1,1,1,2,0,0,0,0,0,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Aethiinae,NA,Least Auklet,Aethia pusilla,Pelagic,LC,0,NA,TRUE,TRUE,0,0,0,2,2,2,1,2,2,0,0,0,0,0,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Aethiinae,NA,Whiskered Auklet,Aethia pygmaea,Pelagic,LC,0,NA,TRUE,TRUE,0,0,0,2,1,1,1,2,0,0,0,0,0,0,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Aethiinae,NA,Crested Auklet,Aethia cristatella,Pelagic,LC,0,NA,TRUE,TRUE,0,0,0,2,2,1,1,2,2,0,0,0,0,0,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Alcinae,NA,Long-billed Murrelet,Brachyramphus perdix,Pelagic,NT,0,NA,TRUE,TRUE,0,0,2,2,1,1,1,1,1,2,0,0,0,0,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Alcinae,NA,Marbled Murrelet,Brachyramphus marmoratus,Pelagic,EN,0,NA,TRUE,TRUE,0,0,2,2,1,1,1,1,1,2,0,0,1,0,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Alcinae,NA,Kittlitz's Murrelet,Brachyramphus brevirostris,Pelagic,NT,0,NA,TRUE,TRUE,0,0,2,1,1,1,1,2,0,0,0,0,1,0,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Alcinae,NA,Black Guillemot,Cepphus grylle,Pelagic,LC,1,n,TRUE,TRUE,1,1,1,1,1,1,1,2,0,0,0,2,1,0,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Alcinae,NA,Pigeon Guillemot,Cepphus columba,Pelagic,LC,0,NA,TRUE,TRUE,0,0,0,2,2,2,2,2,2,0,0,0,0,0,0,Central and Eastern Pacific Flyway,Stable
+CHARADRIIFORMES,Alcidae,Auks,Alcinae,NA,Spectacled Guillemot,Cepphus carbo,Pelagic,LC,0,NA,TRUE,TRUE,0,0,2,2,2,1,1,2,0,0,0,0,0,0,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Alcinae,NA,Ancient Murrelet,Synthliboramphus antiquus,Pelagic,LC,0,NA,TRUE,TRUE,0,0,2,2,2,2,2,2,0,0,0,0,1,1,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Alcinae,NA,Japanese Murrelet,Synthliboramphus wumizusume,Pelagic,VU,0,NA,TRUE,TRUE,2,2,1,1,2,0,0,0,0,0,0,0,0,0,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Alcinae,NA,Scripps's Murrelet,Synthliboramphus scrippsi,Pelagic,VU,0,NA,TRUE,TRUE,0,2,2,2,2,2,2,0,0,0,0,0,0,0,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Alcinae,NA,Guadalupe Murrelet,Synthliboramphus hypoleucus,Pelagic,EN,0,NA,TRUE,TRUE,1,1,1,1,1,1,2,0,0,0,0,2,0,0,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Alcinae,NA,Craveri's Murrelet,Synthliboramphus craveri,Pelagic,VU,0,NA,TRUE,TRUE,0,2,2,2,2,0,0,0,0,0,0,0,0,0,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Alcinae,NA,Razorbill,Alca torda,Pelagic,LC,1,n,TRUE,TRUE,0,0,2,1,1,1,1,1,2,0,0,0,0,1,0,Atlantic Flyway,Increasing
+CHARADRIIFORMES,Alcidae,Auks,Alcinae,NA,Great Auk,Pinguinus impennis,Pelagic,EX,0,NA,FALSE,FALSE,0,0,0,0,2,2,2,2,0,0,0,0,0,0,0,,NA
+CHARADRIIFORMES,Alcidae,Auks,Alcinae,NA,Little Auk,Alle alle,Pelagic,LC,1,n,TRUE,TRUE,0,0,0,2,1,1,1,2,0,0,0,0,0,1,0,Atlantic Flyway,Decreasing
+CHARADRIIFORMES,Alcidae,Auks,Alcinae,NA,Thick-billed Murre,Uria lomvia,Pelagic,LC,1,n,TRUE,TRUE,0,0,0,2,1,1,1,1,2,0,0,0,1,1,0,"Atlantic Flyway,Central and Eastern Pacific Flyway",Increasing
+CHARADRIIFORMES,Alcidae,Auks,Alcinae,NA,Common Murre,Uria aalge,Pelagic,LC,1,n,TRUE,TRUE,0,0,0,2,1,1,1,1,1,2,0,0,1,1,0,"Atlantic Flyway,Central and Eastern Pacific Flyway",Increasing
+PHAETHONTIFORMES,Phaethontidae,Tropicbirds,Phaethontidae,NA,Red-billed Tropicbird,Phaethon aethereus,Pelagic,LC,0,NA,FALSE,FALSE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,,NA
+PHAETHONTIFORMES,Phaethontidae,Tropicbirds,Phaethontidae,NA,Red-tailed Tropicbird,Phaethon rubricauda,Pelagic,LC,0,NA,FALSE,FALSE,1,1,1,1,1,2,2,0,0,0,0,2,0,0,0,"Central and Eastern Pacific Flyway,East Indian Ocean Flyway,North Indian Ocean Flyway,Western Pacific Flyway",Decreasing
+PHAETHONTIFORMES,Phaethontidae,Tropicbirds,Phaethontidae,NA,White-tailed Tropicbird,Phaethon lepturus,Pelagic,LC,0,NA,FALSE,FALSE,2,2,2,2,2,2,2,2,2,2,2,2,0,0,1,"Atlantic Flyway,Central and Eastern Pacific Flyway,East Indian Ocean Flyway,North Indian Ocean Flyway,Western Pacific Flyway",Decreasing
