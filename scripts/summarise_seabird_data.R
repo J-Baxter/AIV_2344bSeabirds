@@ -31,7 +31,7 @@ ebird_taxa <- read_csv('./data/eBird_taxonomy_v2024.csv')
 sequence_meta <- read_csv('./data/gisaid_info_tbl-wg_infoGEO.2.wg_info_full.csv')
 
 # Birdlife taxonomy
-birdlife_taxa <- readxl::read_xlsx('~/Downloads/zip_file/HBW_BirdLife_List of Birds_v.9.xlsx') 
+birdlife_taxa <- readxl::read_xlsx('.data/HBW_BirdLife_List of Birds_v.9.xlsx') 
 
 
 ################################### MAIN #######################################
@@ -102,8 +102,32 @@ family_by_year <- sequence_meta_with_full_taxa %>%
   count(family_name, year)
 
 # Summary plots
+sequence_meta_with_full_taxa %>%
+  count(order_name, family_name) %>%
+  ggplot(aes(x = order_name, fill = family_name, y = n))+
+  geom_bar(position = 'stack', stat = 'identity')
 
 
+family_by_year %>%
+  ggplot() + 
+  geom_area(aes(x = year, y = n, fill = family_name))
+
+
+sequence_meta_with_full_taxa %>%
+  count(family_name, continent) %>%
+  ggplot(aes(x = continent, fill = family_name, y = n))+
+  geom_bar(position = 'stack', stat = 'identity')
+
+sequence_meta_with_full_taxa %>%
+  filter(!grepl('sp\\.', scientific_name)) %>%
+  left_join(seabird_taxa) %>%
+  count(movement, family_name) %>%
+  drop_na() %>%
+  ggplot(aes(x = movement, 
+             fill = family_name,
+             y = n)) +
+  geom_bar(stat = 'identity', position = 'stack')
+ 
 ################################### OUTPUT #####################################
 # Save output files, plots, or results
 
