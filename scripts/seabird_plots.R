@@ -17,7 +17,11 @@ memory.limit(30000000)
 library(tidyverse)
 library(magrittr)
 library(fitdistrplus)
-
+library(scales)
+library(rnaturalearth)
+library(ggtree)
+library(ggtreeExtra)
+library(ggnewscale)
 FormatPhyloGeo <- function(mcc_file, posterior_file) {
   require(rnaturalearthdata)
   require(tidytree)
@@ -57,8 +61,8 @@ FormatPhyloGeo <- function(mcc_file, posterior_file) {
   )
 
 
-  localTreesDirectory <- "./2025Jun10/temp_tree_dir/"
-  do.call(file.remove, list(list.files("./2025Jun10/temp_tree_dir/", full.names = TRUE)))
+  localTreesDirectory <- "./phylo/temp_tree_dir/"
+  do.call(file.remove, list(list.files("./phylo/temp_tree_dir/", full.names = TRUE)))
 
   burnIn <- 0
   randomSampling <- TRUE
@@ -174,7 +178,7 @@ seabird_outbreaks <- read_csv("./data/seabird_outbreak_16Dec2024.csv") %>%
 
 new_seabirds <- read_csv("./data/seabirds_tropicbirds_add_20250625.csv")
 
-
+meta <- read_csv('./data/2024-09-09_meta.csv')
 ################################### MAIN #######################################
 # Main analysis or transformation steps
 # 1a.
@@ -262,12 +266,12 @@ plt_1b <- seabird_outbreaks %>%
   )
 
 # 1c - proportion of seabird sequences (all birds vs seabird families)
-plt_1c <- meta %>%
+seabird_meta <- meta %>%
   left_join(new_seabirds %>%
-    dplyr::select(host_family = family) %>%
-    mutate(host_family = str_to_lower(host_family)) %>%
-    mutate(is_seabird = 1) %>%
-    distinct()) %>%
+              dplyr::select(host_family = family) %>%
+              mutate(host_family = str_to_lower(host_family)) %>%
+              mutate(is_seabird = 1) %>%
+              distinct()) %>%
   dplyr::select(
     host_family,
     collection_date,
@@ -288,8 +292,9 @@ plt_1c <- meta %>%
     "stercorariidae",
     "procellariidae",
     "fregatidae"
-  ))) %>%
-  ggplot() +
+  ))) 
+
+plt_1c <- ggplot(seabird_meta) +
   geom_area(
     aes(
       x = ymd(paste0(collection_datemonth, "-01")),
@@ -298,12 +303,23 @@ plt_1c <- meta %>%
     ),
     position = position_fill(reverse = TRUE)
   ) +
-  scale_fill_brewer("Host",
-    na.translate = F,
-    palette = "Greens",
-    direction = 1,
-    labels = str_to_title
-  ) +
+  #scale_fill_brewer("Host",
+    #na.translate = F,
+    #palette = "Dark2",
+    #direction = 1,
+    #labels = str_to_title
+  #) +
+  scale_fill_manual('Host',
+                    values =  c("laridae" = '#11A579',
+                                "sulidae" = '#7F3C8D',
+                                "phalacrocoracidae" = '#3969AC',
+                                "spheniscidae" = '#F2B701',
+                                "alcidae" = '#E73F74',
+                                "stercorariidae" ='#80BA5A',
+                                "procellariidae" = '#E68310',
+                                "fregatidae" = '#008695'),
+                    labels = str_to_title,
+                    na.translate = F) + 
   theme_minimal() +
   scale_x_date("Year",
     expand = c(0, 0),
@@ -412,32 +428,62 @@ plt_1d <- ggplot() +
   )
 
 # 1e. Photo
-bird_photo <- readJPEG("./misc/gull_steals_food.jpg")
+#bird_photo <- readJPEG("./misc/gull_steals_food.jpg")
 
 
 
-plt_1e <- ggdraw() +
-  draw_image(bird_photo) +
-  theme_void() +
-  theme(plot.margin = grid::unit(c(0.5, 0.5, 0.5, 0.5), "pt"))
+#plt_1e <- ggdraw() +
+  #draw_image(bird_photo) +
+  #theme_void() +
+  #theme(plot.margin = grid::unit(c(0.5, 0.5, 0.5, 0.5), "pt"))
 
 # 1f. Global tree with seabird species (+ seabird only skygrid)
+new_tree <- read.beast('./phylo/ha_seabird_srd06_hmc_constant_hipstr.tree')
+new_names <- as_tibble(new_tree) %>% dplyr::select(label) %>%
+  drop_na() %>%
+  mutate(isolate_id = str_extract(label, "EPI_ISL_(china_){0,1}\\d+[^.|]*")) %>%
+  rename(new = label) %>%
+  left_join(meta %>% 
+  dplyr::select(isolate_id, old = tipnames))
+
 plt_1f <- new_tree %>%
   # drop.tip(drop) %>%
   rename_taxa(new_names, old, new) %>%
   left_join(
-    metadata_in_tree %>%
-      rename(label = isolate_id),
+    meta %>%
+      left_join(new_seabirds %>%
+                  dplyr::select(host_family = family) %>%
+                  mutate(host_family = str_to_lower(host_family)) %>%
+                  mutate(is_seabird = 1) %>%
+                  distinct()) %>%
+      mutate(fill = factor(host_family, levels = c(
+        "laridae",
+        "sulidae",
+        "phalacrocoracidae",
+        "spheniscidae",
+        "alcidae",
+        "stercorariidae",
+        "procellariidae",
+        "fregatidae"
+      ))) %>%
+      mutate(collection_regionname = case_when(grepl('europe', collection_regionname) ~ 'europe',
+                                               grepl('africa', collection_regionname) ~ 'africa',
+                                               grepl('asia', collection_regionname) ~ 'asia',
+                                               grepl('(central|northern) america|caribbean', collection_regionname) ~ 'central & northern america',
+                                               grepl('south america|southern ocean', collection_regionname) ~ 'south america',
+                                               grepl('australia|melanesia', collection_regionname) ~ 'australasia',
+                                               .default = collection_regionname)) %>%
+      rename(label = tipnames),
     by = "label"
   ) %>%
-  left_join(seabirds) %>%
+  #left_join(seabirds) %>%
   ggtree(mrsd = "2024-03-28") +
-
+  
   geom_tiplab(aes(colour = !is.na(is_seabird)),
-    align = TRUE,
-    size = 0
+              align = TRUE,
+              size = 0
   ) +
-
+  
   scale_colour_manual(
     labels = c(
       "TRUE" = "Seabird",
@@ -449,53 +495,59 @@ plt_1f <- new_tree %>%
     ),
     guide = "none"
   ) +
-
+  
   # tip colour + shape = new sequences
   geom_tippoint(aes(fill = collection_regionname),
-    shape = 21,
-    size = 3
+                shape = 21,
+                size = 2
   ) +
   scale_fill_manual("Continent",
-    values = region_colours,
-    labels = str_to_title,
-    na.translate = F,
-    guide = guide_legend(
-      keywidth = 1.5,
-      keyheight = 1,
-      ncol = 1,
-      order = 1
-    )
+                    values = region_colours,
+                    labels = str_to_title,
+                    na.translate = F,
+                    guide = guide_legend(
+                      keywidth = 1.5,
+                      keyheight = 1,
+                      ncol = 1,
+                      order = 1
+                    )
   ) +
-
-
-
+  
+  
+  
   # node colour to show pp support
   new_scale_fill() +
   # geom_nodepoint(aes(colour = posterior), alpha = 0.7) +
   # scale_color_distiller(palette = 'YlOrRd', direction = 1, 'Posterior Support',
   # guide = guide_colourbar(order = 4)) +
-
+  
   geom_fruit(
     geom = geom_tile,
-    mapping = aes(fill = !is.na(is_seabird)),
+    mapping = aes(fill = fill),
     width = 0.5,
     # colour = "white",
     # pwidth = 1.2,
     offset = 0.05
   ) +
-  scale_fill_manual("Host",
-    labels = c(
-      "TRUE" = "Seabird",
-      "FALSE" = "Other"
-    ),
-    values = c(
-      "TRUE" = "#023858",
-      "FALSE" = "#ece7f2"
-    ),
-    guide = guide_legend(keywidth = 1.5, keyheight = 1, ncol = 1, order = 1)
-  ) +
-
-
+  
+  scale_fill_manual('Host',
+                    values =  c("laridae" = '#11A579',
+                                "sulidae" = '#7F3C8D',
+                                "phalacrocoracidae" = '#3969AC',
+                                "spheniscidae" = '#F2B701',
+                                "alcidae" = '#E73F74',
+                                "stercorariidae" ='#80BA5A',
+                                "procellariidae" = '#E68310',
+                                "fregatidae" = '#008695'),
+                    labels = str_to_title,
+                    na.translate = F) + 
+  #scale_fill_discrete("Host",
+  # na.value = NA,
+  
+  #guide = guide_legend(keywidth = 1.5, keyheight = 1, ncol = 1, order = 1)
+  #) +
+  
+  
   theme_tree2(
     plot.margin = unit(c(1, 1, 1, 1), units = "cm"),
     axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
@@ -504,7 +556,7 @@ plt_1f <- new_tree %>%
     legend.position.inside = c(0, 1),
     legend.justification = c(0, 1)
   ) +
-
+  
   scale_x_continuous(
     # limits = c(2000, 2023),
     "Year",
@@ -512,11 +564,29 @@ plt_1f <- new_tree %>%
   )
 
 
-
 ################################### OUTPUT #####################################
 # Save output files, plots, or results
-bttm <- align_plots(plt_1c, plt_1f, plt_1e, axis = "tb", align = "h")
-top <- align_plots(plt_1a, plt_1d, plt_1f, axis = "t", align = "h")
+rh <- align_plots(plt_1c, plt_1f, axis = "r", align = "v")
+lh <- align_plots(plt_1a, plt_1f, axis = "l", align = "v")
+
+top <- plot_grid(lh[[1]], plt_1b, rh[[1]], align = 'h', axis = 'tb', nrow = 1, scale = 0.95, labels = 'AUTO')
+
+plot_grid(top, plt_1f, nrow = 2, rel_heights = c(0.33, 0.66), labels = c('', 'D'))
+
+rh <- align_plots(plt_1d, plt_1f, axis = "r", align = "v")
+lh <- align_plots(plt_1a, plt_1f, axis = "l", align = "v")
+top <- plot_grid(lh[[1]], plt_1b, rh[[1]], align = 'h', axis = 'tb', nrow = 1, scale = 0.95, labels = 'AUTO')
+
+plot_grid(top, plt_1f + annotate("plot_npc", 
+                                 npcx = 0, npcy = 0.3, 
+                                 label = plt_1c + theme(legend.position = 'none') , 
+                                 vp.width = 0.4, vp.height = 0.3) , nrow = 2, rel_heights = c(0.33, 0.66), labels = c('', 'D'))
+
+
+
+top <- plot_grid(lh[[1]], plt_1b, rh[[1]], align = 'h', axis = 'tb', nrow = 1, scale = 0.95, labels = 'AUTO')
+
+plot_grid(top, plt_1f , nrow = 2, rel_heights = c(0.33, 0.66), labels = c('', 'D'))
 
 lh <- plot_grid(top[[1]], plt_1b, bttm[[1]], axis = "lr", align = "v", nrow = 3, labels = "AUTO")
 mid <- plot_grid(top[[2]], bttm[[3]],
