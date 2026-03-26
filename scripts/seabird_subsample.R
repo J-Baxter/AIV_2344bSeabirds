@@ -113,11 +113,11 @@ all_meta <- read_csv("./data/2024-09-09_meta.csv")
 new_seabirds <- read_csv("./data/seabirds_tropicbirds_add_20250625.csv")
 
 alignment_files <- c(
-  list.files("./2024Aug18/region_alignments",
+  list.files("~/Documents/AIV_2344bEpizooticReassortment/2024Aug18/region_alignments",
     pattern = "ha_",
     full.names = T
   ),
-  list.files("./2024Aug18/reassortant_alignments",
+  list.files("~/Documents/AIV_2344bEpizooticReassortment/2024Aug18/reassortant_alignments",
     pattern = "ha_",
     full.names = T
   )
@@ -129,26 +129,26 @@ alignments <- lapply(alignment_files, read.dna, format = "fasta", as.matrix = F)
 ################################### MAIN #######################################
 # Main analysis or transformation steps
 new_seabirds_order <- new_seabirds %>%
-  select(host_order = order) %>%
+  dplyr::select(host_order = order) %>%
   distinct() %>%
   mutate(host_order = str_to_lower(host_order)) %>%
   mutate(is_seabird_order = 1)
 
 new_seabirds_family <- new_seabirds %>%
-  select(host_family = family) %>%
+  dplyr::select(host_family = family) %>%
   distinct() %>%
   mutate(host_family = str_to_lower(host_family)) %>%
   mutate(is_seabird_family = 1)
 
 new_seabirds_sciname <- new_seabirds %>%
-  select(host_sciname = Scientific.name) %>%
+  dplyr::select(host_sciname = Scientific.name) %>%
   distinct() %>%
   mutate(host_sciname = str_to_lower(host_sciname)) %>%
   mutate(is_seabird_sciname = 1)
 
 seabirds <- read_csv("./data/seabird_H5Nx_meta.csv") %>%
   mutate(is_seabird = 1) %>%
-  select(tipnames, is_seabird)
+  dplyr::select(tipnames, is_seabird)
 
 temp <- do.call(c, alignments)
 names(temp) <- gsub(".*\\.", "", names(temp))
@@ -158,7 +158,7 @@ temp <- temp[!duplicated(names(temp))]
 groups <- GroupSequences(as.matrix(temp), snp_threshold = 1)
 
 groups_with_seabirds <- groups %>%
-  left_join(meta %>% select(tipnames, host_family)) %>%
+  left_join(meta %>% dplyr::select(tipnames, host_family)) %>%
   left_join(new_seabirds_family) %>%
   group_by(sequence_group) %>%
   # Replace non seabirds wth 0
@@ -173,7 +173,7 @@ ha_seabird_subsample <- all_meta %>%
   filter(grepl("H5", virus_subtype)) %>%
   filter(isolate_id %in% str_extract(names(temp), "EPI_ISL_(china_){0,1}\\d+[^.|]*")) %>%
   filter(clade == "2344b") %>%
-  select(
+  dplyr::select(
     tipnames,
     isolate_id,
     collection_date,
@@ -204,15 +204,57 @@ ha_seabird_subsample <- all_meta %>%
   slice_sample(n = 1)
 
 
+ha_seabird_only_subsample <- all_meta %>%
+  drop_na(collection_date) %>%
+  filter(grepl("H5", virus_subtype)) %>%
+  filter(isolate_id %in% str_extract(names(temp), "EPI_ISL_(china_){0,1}\\d+[^.|]*")) %>%
+  filter(clade == "2344b") %>%
+  dplyr::select(
+    tipnames,
+    isolate_id,
+    collection_date,
+    collection_datemonth, 
+    host_family, 
+    host_order, 
+    collection_regionname
+  ) %>%
+  left_join(groups_with_seabirds) %>%
+  drop_na(sequence_group) %>%
+  drop_na(host_family) %>%
+  filter(is_seabird_family >0) %>%
+
+  mutate(collection_regionname = case_when(grepl("europe", collection_regionname) ~ "europe",
+                                           grepl("africa", collection_regionname) ~ "africa",
+                                           grepl("asia", collection_regionname) ~ "asia",
+                                           grepl("(central|northern) america|caribbean", collection_regionname) ~ "central & northern america",
+                                           grepl("south america|southern ocean", collection_regionname) ~ "south america",
+                                           grepl("australia|melanesia", collection_regionname) ~ "australasia",
+                                           .default = collection_regionname
+  )) %>%
+  group_by(collection_regionname, collection_datemonth, host_family) %>%
+  slice_sample(n = 1)
+
+
 # select only genomes that are included
 ha_selected_genomes <- temp[str_extract(names(temp), "EPI_ISL_(china_){0,1}\\d+[^.|]*") %in% ha_seabird_subsample$isolate_id]
 ha_selected_genomes <- ha_selected_genomes[!duplicated(names(ha_selected_genomes))]
 
 
+# Selected genomes for family-stratified alignments
+ha_seabird_only_subsample_by_family <- ha_seabird_only_subsample %>% split(~host_family)
+
+ha_selected_genomes_by_family <- lapply(ha_seabird_only_subsample_by_family, function(x) temp[str_extract(names(temp), "EPI_ISL_(china_){0,1}\\d+[^.|]*") %in% x$isolate_id])
+ha_selected_genomes_by_family <- lapply(ha_selected_genomes_by_family, function(x) x[!duplicated(names(x))])
+
+seabird_fam <- names(ha_seabird_only_subsample_by_family)
+
 ################################### OUTPUT #####################################
 # Save output files, plots, or results
 write.FASTA(ha_selected_genomes, "./data/alignments/ha_seabird_subsample.fasta")
 
+mapply(write.FASTA,
+       ha_selected_genomes_by_family,
+       paste0("./data/alignments/ha_", seabird_fam, "_subsample.fasta"))
 
 
 write_delim(
