@@ -172,24 +172,39 @@ FormatPhyloGeo <- function(mcc_file, posterior_file) {
 
 ################################### DATA #######################################
 # Read and inspect data
-seabird_outbreaks <- read_csv("./data/seabird_outbreak_16Dec2024.csv") %>%
-  mutate(across(ends_with("date"), .fns = ~ parse_date(.x, format = "%d/%m/%Y"))) %>%
-  drop_na(observe_date)
+seabird_outbreaks <- read_csv("./data/seabird_outbreak_combined_Sciname_updated_eventID_27Jan2026.csv") %>%
+  mutate(across(ends_with("date"), .fns = ~ as_date(.x))) %>%
+  mutate(observation.date = coalesce(observation.date, report.date)) %>%
+  rename(observe_date = observation.date, 
+         report_date = report.date) %>%
+  drop_na(observe_date) 
+
+seabird_outbreaks_old <- read_csv("./data/seabird_outbreak_16Dec2024.csv") %>%
+  mutate(across(ends_with("date"), .fns = ~ as_date(format(as.Date(.x, '%d/%m/%Y'), '%Y-%m-%d')))) %>%
+  mutate(observe_date = coalesce(observe_date, report_date)) %>%
+  drop_na(observe_date) 
+
+seabird_outbreaks_all <- seabird_outbreaks %>%
+  bind_rows(seabird_outbreaks_old) %>%
+  distinct(observe_date, Locality, Country, Region)
 
 new_seabirds <- read_csv("./data/seabirds_tropicbirds_add_20250625.csv")
 
-meta <- read_csv('./data/2024-09-09_meta.csv')
+meta <- read_csv('./data/2026-04-15_meta.csv')
 ################################### MAIN #######################################
+read_csv("./data/seabird_outbreak_combined_Sciname_updated_eventID_27Jan2026.csv") 
+read_csv("./data/seabird_outbreak_16Dec2024.csv") 
+
 # Main analysis or transformation steps
 # 1a.
-plt_1a <- seabird_outbreaks %>%
+plt_1a <- seabird_outbreaks_all %>%
   dplyr::select(starts_with("observe")) %>%
   count(year(observe_date)) %>%
   ggplot(aes(x = `year(observe_date)`, y = n)) +
   geom_bar(stat = "identity", fill = "grey75") +
   geom_smooth(
     method = "glm",
-    data = seabird_outbreaks %>%
+    data = seabird_outbreaks_all %>%
       dplyr::select(starts_with("observe")) %>%
       count(year(observe_date)) %>%
       filter(`year(observe_date)` > 2015 & `year(observe_date)` < 2024),
@@ -207,7 +222,7 @@ plt_1a <- seabird_outbreaks %>%
   ) +
   scale_x_continuous("Year",
     expand = c(0, 0),
-    limits = c(2005, 2025),
+    limits = c(2005, 2026),
     breaks = pretty_breaks(n = 10)
   ) +
   scale_y_continuous("Number of Outbreak Events",
@@ -231,7 +246,7 @@ region_colours <- c(
   "south america" = "#e6ab02"
 )
 
-plt_1b <- seabird_outbreaks %>%
+plt_1b <- seabird_outbreaks_all %>%
   mutate(new_region = case_when(Country %in% c("Canada", "Greenland", "United States of America", "Panama") ~ "central & northern america",
     Country %in% c("Argentina", "Ecuador", "Brazil", "Uruguay", "Falkland Islands (Malvinas)", "Chile", "Peru") ~ "south america",
     .default = str_to_lower(Region)
@@ -250,6 +265,7 @@ plt_1b <- seabird_outbreaks %>%
   ) +
   theme_minimal() +
   scale_x_continuous("Year",
+                     limits = c(2005, 2026),
     expand = c(0, 0),
     breaks = pretty_breaks(n = 10)
   ) +
@@ -279,6 +295,7 @@ seabird_meta <- meta %>%
     is_seabird
   ) %>%
   drop_na(collection_date) %>%
+  mutate(collection_date = format(as.Date(collection_date, "%d/%m/%Y"), format = '%Y-%m-%d')) %>%
   filter(collection_date > as.Date("2017-01-01")) %>%
   replace_na(list(is_seabird = 0)) %>%
   mutate(fill = ifelse(is_seabird == 0, NA, host_family)) %>%
@@ -325,7 +342,7 @@ plt_1c <- ggplot(seabird_meta) +
     expand = c(0, 0),
     breaks = pretty_breaks(n = 10)
   ) +
-  scale_y_continuous("Proportion of All NFLGs",
+  scale_y_continuous("Proportion of NFLGs",
     expand = c(0, 0),
     limits = c(0, NA)
   ) +
@@ -469,7 +486,9 @@ plt_1f <- new_tree %>%
       mutate(collection_regionname = case_when(grepl('europe', collection_regionname) ~ 'europe',
                                                grepl('africa', collection_regionname) ~ 'africa',
                                                grepl('asia', collection_regionname) ~ 'asia',
-                                               grepl('(central|northern) america|caribbean', collection_regionname) ~ 'central & northern america',
+                                               collection_regionname %in% c("arctic", "western canada" , "south" , "eastern canada",
+                                                                            "midwest", "northeast", "west", "pacific northwest",
+                                                                            "northern america","central america" ) ~ 'central & northern america',
                                                grepl('south america|southern ocean', collection_regionname) ~ 'south america',
                                                grepl('australia|melanesia', collection_regionname) ~ 'australasia',
                                                .default = collection_regionname)) %>%
@@ -479,10 +498,50 @@ plt_1f <- new_tree %>%
   #left_join(seabirds) %>%
   ggtree(mrsd = "2024-03-28") +
   
-  geom_tiplab(aes(colour = !is.na(is_seabird)),
+  geom_tiplab(aes(colour = fill),
               align = TRUE,
               size = 0
   ) +
+  
+  scale_colour_manual('Host',
+                      values =  c("laridae" = '#11A579',
+                                  "sulidae" = '#7F3C8D',
+                                  "phalacrocoracidae" = '#3969AC',
+                                  "spheniscidae" = '#F2B701',
+                                  "alcidae" = '#E73F74',
+                                  "stercorariidae" ='#80BA5A',
+                                  "procellariidae" = '#E68310',
+                                  "fregatidae" = '#008695'),
+                      guide = 'none',
+                      labels = str_to_title,
+                      na.translate = F
+  )+
+  
+  # tip colour + shape = new sequences
+  new_scale_colour() + 
+  geom_tippoint(aes(fill = fill, colour = !is.na(is_seabird)),
+                shape = 21,
+                size = 2
+  ) +
+  scale_fill_manual('Host',
+                    values =  c("laridae" = '#11A579',
+                                "sulidae" = '#7F3C8D',
+                                "phalacrocoracidae" = '#3969AC',
+                                "spheniscidae" = '#F2B701',
+                                "alcidae" = '#E73F74',
+                                "stercorariidae" ='#80BA5A',
+                                "procellariidae" = '#E68310',
+                                "fregatidae" = '#008695'),
+                    guide = guide_legend(
+                      keywidth = 1.5,
+                      keyheight = 1,
+                      ncol = 1,
+                      order = 1
+                    ),
+                    labels = str_to_title,
+                    na.translate = F
+  ) +
+  
   
   scale_colour_manual(
     labels = c(
@@ -490,27 +549,10 @@ plt_1f <- new_tree %>%
       "FALSE" = "Other"
     ),
     values = c(
-      "TRUE" = "#023858",
+      "TRUE" = "black",
       "FALSE" = "#ff000000"
     ),
     guide = "none"
-  ) +
-  
-  # tip colour + shape = new sequences
-  geom_tippoint(aes(fill = collection_regionname),
-                shape = 21,
-                size = 2
-  ) +
-  scale_fill_manual("Continent",
-                    values = region_colours,
-                    labels = str_to_title,
-                    na.translate = F,
-                    guide = guide_legend(
-                      keywidth = 1.5,
-                      keyheight = 1,
-                      ncol = 1,
-                      order = 1
-                    )
   ) +
   
   
@@ -523,24 +565,17 @@ plt_1f <- new_tree %>%
   
   geom_fruit(
     geom = geom_tile,
-    mapping = aes(fill = fill),
-    width = 0.5,
+    mapping = aes(fill = collection_regionname),
+    width = 0.3,
     # colour = "white",
     # pwidth = 1.2,
     offset = 0.05
   ) +
   
-  scale_fill_manual('Host',
-                    values =  c("laridae" = '#11A579',
-                                "sulidae" = '#7F3C8D',
-                                "phalacrocoracidae" = '#3969AC',
-                                "spheniscidae" = '#F2B701',
-                                "alcidae" = '#E73F74',
-                                "stercorariidae" ='#80BA5A',
-                                "procellariidae" = '#E68310',
-                                "fregatidae" = '#008695'),
-                    labels = str_to_title,
-                    na.translate = F) + 
+  scale_fill_manual( values = region_colours,
+                     labels = str_to_title,
+                     na.translate = F,
+  ) + 
   #scale_fill_discrete("Host",
   # na.value = NA,
   
@@ -571,18 +606,15 @@ lh <- align_plots(plt_1a, plt_1f, axis = "l", align = "v")
 
 top <- plot_grid(lh[[1]], plt_1b, rh[[1]], align = 'h', axis = 'tb', nrow = 1, scale = 0.95, labels = 'AUTO')
 
-plot_grid(top, plt_1f, nrow = 2, rel_heights = c(0.33, 0.66), labels = c('', 'D'))
-
-rh <- align_plots(plt_1d, plt_1f, axis = "r", align = "v")
-lh <- align_plots(plt_1a, plt_1f, axis = "l", align = "v")
-top <- plot_grid(lh[[1]], plt_1b, rh[[1]], align = 'h', axis = 'tb', nrow = 1, scale = 0.95, labels = 'AUTO')
-
-plot_grid(top, plt_1f + annotate("plot_npc", 
-                                 npcx = 0, npcy = 0.3, 
-                                 label = plt_1c + theme(legend.position = 'none') , 
-                                 vp.width = 0.4, vp.height = 0.3) , nrow = 2, rel_heights = c(0.33, 0.66), labels = c('', 'D'))
+plt1 <-plot_grid(top, plt_1f, nrow = 2, rel_heights = c(0.33, 0.66), labels = c('', 'D'))
 
 
+ggsave( "~/Downloads/seabird_fig1.jpeg",
+        plt1,
+       height = 12,
+       width = 17,
+       dpi = 360
+)
 
 top <- plot_grid(lh[[1]], plt_1b, rh[[1]], align = 'h', axis = 'tb', nrow = 1, scale = 0.95, labels = 'AUTO')
 
@@ -604,10 +636,6 @@ cowplot::plot_grid(lh,
   labels = c("", "", "F")
 )
 
-ggsave("~/Downloads/seabird_fig1.jpeg",
-  height = 12,
-  width = 17,
-  dpi = 360
-)
+
 #################################### END #######################################
 ################################################################################
