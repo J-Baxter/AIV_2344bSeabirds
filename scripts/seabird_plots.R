@@ -190,7 +190,7 @@ seabird_outbreaks_all <- seabird_outbreaks %>%
 
 new_seabirds <- read_csv("./data/seabirds_tropicbirds_add_20250625.csv")
 
-meta <- read_csv('./data/2026-04-15_meta.csv')
+meta <- read_csv('./data/2026-04-20_meta.csv')
 ################################### MAIN #######################################
 read_csv("./data/seabird_outbreak_combined_Sciname_updated_eventID_27Jan2026.csv") 
 read_csv("./data/seabird_outbreak_16Dec2024.csv") 
@@ -247,10 +247,11 @@ region_colours <- c(
 )
 
 plt_1b <- seabird_outbreaks_all %>%
-  mutate(new_region = case_when(Country %in% c("Canada", "Greenland", "United States of America", "Panama") ~ "central & northern america",
-    Country %in% c("Argentina", "Ecuador", "Brazil", "Uruguay", "Falkland Islands (Malvinas)", "Chile", "Peru") ~ "south america",
+  mutate(new_region = case_when(Country %in% c("Canada", "Greenland", "United States of America", "Panama", "United States") ~ "central & northern america",
+    Country %in% c("Argentina", "Ecuador", "Brazil", "Uruguay", "Chile", "Peru" , "Falkland Islands (Islas Malvinas)", "Falkland Islands (Malvinas)") ~ "south america",
+    Country %in% c('Crozet Islands', "Prince Edward Islands" , "Kerguelen Islands") ~ "antarctica",
     .default = str_to_lower(Region)
-  )) %>%
+  )) %>% 
   count(new_region, year(observe_date)) %>%
   ggplot(aes(
     x = `year(observe_date)`,
@@ -258,11 +259,14 @@ plt_1b <- seabird_outbreaks_all %>%
     colour = new_region
   )) +
   geom_line(linewidth = 1) +
-  scale_colour_manual(
-    values = region_colours,
-    "Region",
-    labels = str_to_title
-  ) +
+  #scale_colour_manual(
+    #values = region_colours,
+    #"Region",
+   # labels = str_to_title
+  #) +
+  scale_colour_brewer(palette = 'Blues', 
+                      'Region',
+                       labels = str_to_title) + 
   theme_minimal() +
   scale_x_continuous("Year",
                      limits = c(2005, 2026),
@@ -356,93 +360,93 @@ plt_1c <- ggplot(seabird_meta) +
 
 
 # 1d. phylogeography of H5N1/2022/R10
-treefiles <- "./phylo/ha_11414114_subsampled_traits_1000.trees"
-mcc_treefiles <- "./phylo/ha_11414114_subsampled_traits_mcc.tree"
+#treefiles <- "./phylo/ha_11414114_subsampled_traits_1000.trees"
+#mcc_treefiles <- "./phylo/ha_11414114_subsampled_traits_mcc.tree"
 
-phylogeo_list <- FormatPhyloGeo(mcc_treefiles, treefiles)
+#phylogeo_list <- FormatPhyloGeo(mcc_treefiles, treefiles)
 
-polygons_sf <- phylogeo_list[["polygons"]]
-edges_sf <- phylogeo_list[["edges"]]
-nodes_sf <- phylogeo_list[["nodes"]]
+#polygons_sf <- phylogeo_list[["polygons"]]
+#edges_sf <- phylogeo_list[["edges"]]
+#nodes_sf <- phylogeo_list[["nodes"]]
 
 # load base map
-map <- ne_countries(scale = "medium", returnclass = "sf")
+#map <- ne_countries(scale = "medium", returnclass = "sf")
 
 # Plot in GGplot
-plt_1d <- ggplot() +
-  geom_sf(data = map) +
+#plt_1d <- ggplot() +
+ # geom_sf(data = map) +
 
   # Plot HPD polygons
-  geom_sf(
-    data = polygons_sf,
-    aes(fill = year),
-    lwd = 0,
-    alpha = 0.07
-  ) +
+  #geom_sf(
+   # data = polygons_sf,
+   # aes(fill = year),
+   # lwd = 0,
+   # alpha = 0.07
+  #) +
 
   # Plot Branches
-  geom_sf(
-    data = edges_sf,
-    lwd = 0.2
-  ) +
+  #geom_sf(
+ #   data = edges_sf,
+   # lwd = 0.2
+  #) +
 
   # Plot nodes
-  geom_sf(
-    data = nodes_sf,
-    size = 1.5,
-    aes(fill = year, colour = year, shape = is.na(label))
-  ) +
-  scale_shape_manual(values = c(19, 1), ) +
+ # geom_sf(
+   # data = nodes_sf,
+   # size = 1.5,
+   # aes(fill = year, colour = year, shape = is.na(label))
+  #) +
+  #scale_shape_manual(values = c(19, 1), ) +
 
   # Set graphical scales - must be fixed
-  scale_fill_viridis_c("Year",
-    limits = c(2021.5, 2023.8),
+  #scale_fill_viridis_c("Year",
+    #limits = c(2021.5, 2023.8),
     # breaks=c(2019, 2020,2021,2022,2023,2024),
-    direction = -1,
-    option = "C"
-  ) +
-  scale_colour_viridis_c("Year",
-    limits = c(2021.5, 2023.8),
-    # breaks=c(2019, 2020,2021,2022,2023,2024),
-    direction = -1,
-    option = "C"
-  ) +
-  coord_sf(
-    ylim = c(10, 75),
-    xlim = c(-20, 50),
-    expand = TRUE
-  ) +
-  scale_x_continuous(expand = c(0, 0)) +
-  scale_y_continuous(expand = c(0, 0)) +
-  guides(
-    colour = guide_colourbar(
-      theme = theme(
-        legend.key.height = unit(0.75, "lines"),
-        legend.key.width = unit(10, "lines")
-      ),
+   # direction = -1,
+   # option = "C"
+  #) +
+  #scale_colour_viridis_c("Year",
+    #limits = c(2021.5, 2023.8),
+    ## breaks=c(2019, 2020,2021,2022,2023,2024),
+   # direction = -1,
+  #  option = "C"
+  #) +
+  #coord_sf(
+  #  ylim = c(10, 75),
+  #  xlim = c(-20, 50),
+  #  expand = TRUE
+  #) +
+  #scale_x_continuous(expand = c(0, 0)) +
+  #scale_y_continuous(expand = c(0, 0)) +
+  #guides(
+    #colour = guide_colourbar(
+     # theme = theme(
+       # legend.key.height = unit(0.75, "lines"),
+       # legend.key.width = unit(10, "lines")
+     # ),
       # title.position = 'left',
-      title.vjust = 1,
-      position = "bottom"
-    ),
-    fill = guide_colourbar(
-      theme = theme(
-        legend.key.height = unit(0.75, "lines"),
-        legend.key.width = unit(10, "lines")
-      ),
-      title.vjust = 1,
+     # title.vjust = 1,
+     # position = "bottom"
+    #),
+    #fill = guide_colourbar(
+     # theme = theme(
+      #  legend.key.height = unit(0.75, "lines"),
+       # legend.key.width = unit(10, "lines")
+     # ),
+     # title.vjust = 1,
       # title.position = 'left',
-      position = "bottom"
-    ),
-    shape = "none"
-  ) +
-  theme_void() +
-  theme(
-    plot.margin = grid::unit(c(5.5, 5.5, 5.5, 5.5), "pt"),
+      #position = "bottom"
+    #),
+    #shape = "none"
+  #) +
+  #theme_void() +
+  #theme(
+    #plot.margin = grid::unit(c(5.5, 5.5, 5.5, 5.5), "pt"),
     # legend.text = element_text(size = 8),
-    legend.position = "bottom",
-    panel.spacing = unit(2, "lines"),
-    strip.background = element_blank()
-  )
+   # legend.position = "bottom",
+    #panel.spacing = unit(2, "lines"),
+    #strip.background = element_blank()
+  #)
 
 # 1e. Photo
 #bird_photo <- readJPEG("./misc/gull_steals_food.jpg")
@@ -489,7 +493,8 @@ plt_1f <- new_tree %>%
                                                collection_regionname %in% c("arctic", "western canada" , "south" , "eastern canada",
                                                                             "midwest", "northeast", "west", "pacific northwest",
                                                                             "northern america","central america" ) ~ 'central & northern america',
-                                               grepl('south america|southern ocean', collection_regionname) ~ 'south america',
+                                               grepl("south georgia and the south", collection_countryname) ~'antarctica',
+                                               grepl('south america', collection_regionname) ~ 'south america',
                                                grepl('australia|melanesia', collection_regionname) ~ 'australasia',
                                                .default = collection_regionname)) %>%
       rename(label = tipnames),
@@ -572,7 +577,9 @@ plt_1f <- new_tree %>%
     offset = 0.05
   ) +
   
-  scale_fill_manual( values = region_colours,
+  scale_fill_brewer('Region',
+                    palette = 'Blues',
+                    #values = region_colours,
                      labels = str_to_title,
                      na.translate = F,
   ) + 
@@ -609,10 +616,19 @@ top <- plot_grid(lh[[1]], plt_1b, rh[[1]], align = 'h', axis = 'tb', nrow = 1, s
 plt1 <-plot_grid(top, plt_1f, nrow = 2, rel_heights = c(0.33, 0.66), labels = c('', 'D'))
 
 
+# Save output files, plots, or results
+rh <- align_plots(plt_1a, plt_1b, plt_1c, axis = "r", align = "v")
+bot <- align_plots(plt_1f, plt_1c, axis = "b", align = "h")
+
+top <- plot_grid(lh[[1]], plt_1b, rh[[1]], align = 'h', axis = 'tb', nrow = 1, scale = 0.95, labels = 'AUTO')
+
+plt1 <-plot_grid( bot[[1]], plot_grid(plt_1a, plt_1b, bot[[2]], axis = "r", align = "v", ncol = 1), ncol = 2, rel_widths  = c(0.66, 0.33))
+
+
 ggsave( "~/Downloads/seabird_fig1.jpeg",
         plt1,
-       height = 12,
-       width = 17,
+       height = 10,
+       width = 10,
        dpi = 360
 )
 
