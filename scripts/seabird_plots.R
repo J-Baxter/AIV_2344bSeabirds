@@ -169,6 +169,20 @@ FormatPhyloGeo <- function(mcc_file, posterior_file) {
 }
 
 
+seabird_cols <- c('alcidae' = '#1E7A8D',
+                  'laridae' = '#F4B183',
+                  'stercorariidae' = '#FFF2CC',
+                  'chionidae' = '#D9D9D9',
+                  'phaethontidae' = '#F8CBAD',
+                  'procellariidae' = '#BDD7EE',
+                  'diomedeidae' = '#9DC3E6',
+                  'hydrobatidae' = '#B4C7E7',
+                  'oceanitidae' = '#CFE2F3',
+                  'phalacrocoracidae' = '#C5E0B4',
+                  'spheniscidae' = '#A6A6A6',
+                  'fregatidae' = '#FFE699',
+                  'sulidae' = '#E3BCFB')
+
 
 ################################### DATA #######################################
 # Read and inspect data
@@ -331,14 +345,19 @@ plt_1c <- ggplot(seabird_meta) +
     #labels = str_to_title
   #) +
   scale_fill_manual('Host',
-                    values =  c("laridae" = '#11A579',
-                                "sulidae" = '#7F3C8D',
-                                "phalacrocoracidae" = '#3969AC',
-                                "spheniscidae" = '#F2B701',
-                                "alcidae" = '#E73F74',
-                                "stercorariidae" ='#80BA5A',
-                                "procellariidae" = '#E68310',
-                                "fregatidae" = '#008695'),
+                    values =  c('alcidae' = '#1E7A8D',
+                                'laridae' = '#F4B183',
+                                'stercorariidae' = '#FFF2CC',
+                                'chionidae' = '#D9D9D9',
+                                'phaethontidae' = '#F8CBAD',
+                                'procellariidae' = '#BDD7EE',
+                                'diomedeidae' = '#9DC3E6',
+                                'hydrobatidae' = '#B4C7E7',
+                                'oceanitidae' = '#CFE2F3',
+                                'phalacrocoracidae' = '#C5E0B4',
+                                'spheniscidae' = '#A6A6A6',
+                                'fregatidae' = '#FFE699',
+                                'sulidae' = '#E3BCFB'),
                     labels = str_to_title,
                     na.translate = F) + 
   theme_minimal() +
@@ -509,14 +528,19 @@ plt_1f <- new_tree %>%
   ) +
   
   scale_colour_manual('Host',
-                      values =  c("laridae" = '#11A579',
-                                  "sulidae" = '#7F3C8D',
-                                  "phalacrocoracidae" = '#3969AC',
-                                  "spheniscidae" = '#F2B701',
-                                  "alcidae" = '#E73F74',
-                                  "stercorariidae" ='#80BA5A',
-                                  "procellariidae" = '#E68310',
-                                  "fregatidae" = '#008695'),
+                      values =  c('alcidae' = '#1E7A8D',
+                                  'laridae' = '#F4B183',
+                                  'stercorariidae' = '#FFF2CC',
+                                  'chionidae' = '#D9D9D9',
+                                  'phaethontidae' = '#F8CBAD',
+                                  'procellariidae' = '#BDD7EE',
+                                  'diomedeidae' = '#9DC3E6',
+                                  'hydrobatidae' = '#B4C7E7',
+                                  'oceanitidae' = '#CFE2F3',
+                                  'phalacrocoracidae' = '#C5E0B4',
+                                  'spheniscidae' = '#A6A6A6',
+                                  'fregatidae' = '#FFE699',
+                                  'sulidae' = '#E3BCFB'),
                       guide = 'none',
                       labels = str_to_title,
                       na.translate = F
@@ -529,14 +553,19 @@ plt_1f <- new_tree %>%
                 size = 2
   ) +
   scale_fill_manual('Host',
-                    values =  c("laridae" = '#11A579',
-                                "sulidae" = '#7F3C8D',
-                                "phalacrocoracidae" = '#3969AC',
-                                "spheniscidae" = '#F2B701',
-                                "alcidae" = '#E73F74',
-                                "stercorariidae" ='#80BA5A',
-                                "procellariidae" = '#E68310',
-                                "fregatidae" = '#008695'),
+                    values =  c('alcidae' = '#1E7A8D',
+                                'laridae' = '#F4B183',
+                                'stercorariidae' = '#FFF2CC',
+                                'chionidae' = '#D9D9D9',
+                                'phaethontidae' = '#F8CBAD',
+                                'procellariidae' = '#BDD7EE',
+                                'diomedeidae' = '#9DC3E6',
+                                'hydrobatidae' = '#B4C7E7',
+                                'oceanitidae' = '#CFE2F3',
+                                'phalacrocoracidae' = '#C5E0B4',
+                                'spheniscidae' = '#A6A6A6',
+                                'fregatidae' = '#FFE699',
+                                'sulidae' = '#E3BCFB'),
                     guide = guide_legend(
                       keywidth = 1.5,
                       keyheight = 1,
