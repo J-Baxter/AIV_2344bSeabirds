@@ -22,6 +22,9 @@ library(rnaturalearth)
 library(ggtree)
 library(ggtreeExtra)
 library(ggnewscale)
+library(treeio)
+library(cowplot)
+
 FormatPhyloGeo <- function(mcc_file, posterior_file) {
   require(rnaturalearthdata)
   require(tidytree)
@@ -205,6 +208,11 @@ seabird_outbreaks_all <- seabird_outbreaks %>%
 new_seabirds <- read_csv("./data/seabirds_tropicbirds_add_20250625.csv")
 
 meta <- read_csv('./data/2026-04-20_meta.csv')
+
+seabird_hxnx_summary <- read_csv('./data/seabird_family_HxNx_summary.csv') %>%
+  mutate(H = str_extract(subtype, pattern = '(?<=H)\\d+'),
+         N = str_extract(subtype, pattern = '(?<=N)\\d+')) %>%
+  mutate(across(c(H,N), .fns = ~ as.character(.x))) 
 ################################### MAIN #######################################
 read_csv("./data/seabird_outbreak_combined_Sciname_updated_eventID_27Jan2026.csv") 
 read_csv("./data/seabird_outbreak_16Dec2024.csv") 
@@ -372,9 +380,9 @@ plt_1c <- ggplot(seabird_meta) +
   theme(
     axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1),
     axis.title.x = element_text(vjust = 0.5),
-    legend.position = "inside",
-    legend.position.inside = c(0, 1),
-    legend.justification = c(0, 1)
+    #legend.position = "bottom",
+    #legend.position.inside = c(0, 1),
+    #legend.justification = c(0, 1)
   )
 
 
@@ -635,15 +643,53 @@ plt_1f <- new_tree %>%
   )
 
 
+
+
+seabird_hx_summary <- seabird_hxnx_summary %>%
+  summarise(sequence_count = sum(sequence_count), .by = c(family_name, H))
+
+plt_1g <- seabird_hxnx_summary %>% 
+  filter(H != 5) %>% 
+  group_by(family_name, H) %>% tally() %>% ungroup() %>% 
+  mutate(family_name = forcats::fct_reorder(str_to_lower(family_name), n, .fun = sum, .desc = F),
+         H = forcats::fct_reorder(H, as.integer(H), .fun = max)) %>%
+  ggplot(aes(x = H, y = n, fill = family_name)) + 
+  geom_bar(stat = 'identity', position = 'fill')+ 
+  scale_fill_manual('Host',
+                    values =  c('alcidae' = '#1E7A8D',
+                                'laridae' = '#F4B183',
+                                'stercorariidae' = '#FFF2CC',
+                                'chionidae' = '#D9D9D9',
+                                'phaethontidae' = '#F8CBAD',
+                                'procellariidae' = '#BDD7EE',
+                                'diomedeidae' = '#9DC3E6',
+                                'hydrobatidae' = '#B4C7E7',
+                                'oceanitidae' = '#CFE2F3',
+                                'phalacrocoracidae' = '#C5E0B4',
+                                'spheniscidae' = '#A6A6A6',
+                                'fregatidae' = '#FFE699',
+                                'sulidae' = '#E3BCFB'),
+                    labels = str_to_title,
+                    na.translate = F
+  ) + theme_minimal() + theme(legend.position = 'none') + 
+  scale_y_continuous('Proportion of NFLGs', expand = c(0,0)) + 
+  scale_x_discrete('Haemagglutinin Subtype')
+
+
 ################################### OUTPUT #####################################
 # Save output files, plots, or results
-rh <- align_plots(plt_1c, plt_1f, axis = "r", align = "v")
-lh <- align_plots(plt_1a, plt_1f, axis = "l", align = "v")
+rh <- align_plots(plt_1b, plt_1c+theme(legend.position = 'none'), axis = "r", align = "v")
+lh <- align_plots(plt_1a, plt_1g, axis = "l", align = "v")
+family_legend <- get_plot_component(plt_1c + theme(legend.position = 'bottom'), 'guide-box-bottom', return_all = TRUE) 
+bottom <- plot_grid(lh[[1]], rh[[1]], lh[[2]], rh[[2]], align = 'h', axis = 'tb', nrow = 2, scale = 0.95, labels = c('B' ,'C', 'D', 'F'))
+plt1 <-plot_grid(plt_1f, bottom, family_legend, nrow = 3, rel_heights = c(0.55,0.4, 0.05), labels = 'A')
 
-top <- plot_grid(lh[[1]], plt_1b, rh[[1]], align = 'h', axis = 'tb', nrow = 1, scale = 0.95, labels = 'AUTO')
-
-plt1 <-plot_grid(top, plt_1f, nrow = 2, rel_heights = c(0.33, 0.66), labels = c('', 'D'))
-
+ggsave( "~/Downloads/seabird_fig1.jpeg",
+        plt1,
+        height = 15,
+        width = 10,
+        dpi = 360
+)
 
 # Save output files, plots, or results
 rh <- align_plots(plt_1a, plt_1b, plt_1c, axis = "r", align = "v")
@@ -654,12 +700,7 @@ top <- plot_grid(lh[[1]], plt_1b, rh[[1]], align = 'h', axis = 'tb', nrow = 1, s
 plt1 <-plot_grid( bot[[1]], plot_grid(plt_1a, plt_1b, bot[[2]], axis = "r", align = "v", ncol = 1), ncol = 2, rel_widths  = c(0.66, 0.33))
 
 
-ggsave( "~/Downloads/seabird_fig1.jpeg",
-        plt1,
-       height = 10,
-       width = 10,
-       dpi = 360
-)
+
 
 top <- plot_grid(lh[[1]], plt_1b, rh[[1]], align = 'h', axis = 'tb', nrow = 1, scale = 0.95, labels = 'AUTO')
 
